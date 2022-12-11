@@ -110,7 +110,7 @@ const makeTrail = (col, maxSpeed = null, headAt = null) => {
 const trails = [];
 
 const clear = () => {
-  c.fillStyle = "black";
+  c.fillStyle = "#000816";
   c.fillRect(0, 0, canvas.width, canvas.height);
 };
 

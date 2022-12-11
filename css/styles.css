@@ -76,7 +76,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 body{
-    background-color: black;
+    background-color: #000816;
+}
+
+.header{
+    position: sticky;
+    top: 0;
 }
 .content{
     flex: 1 1 auto;
@@ -85,15 +90,11 @@ body{
 .top__logo img{
     max-width: 100%;
 }
+
 .top__row{
-    padding: 10% 0%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-.container{
-    max-width: 80%;
-    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .timer{
@@ -105,8 +106,7 @@ body{
     font-size: 20px;
 }
 
-.top__format_time_wrapper{
-    max-width: 592px;
+.top__format-time-wrapper{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -168,15 +168,11 @@ body{
 .top__conic {
 	position: relative;
 	z-index: 2;
-	width: 600px;
-	height: 100px;
+	max-width: 600px;
+	max-height: 100px;
 	border-radius: 10px;
 	overflow: hidden;
 	padding: 2rem;
-    max-width: 100%;
-}
-
-.top__conic span{
     max-width: 100%;
 }
 
@@ -188,7 +184,7 @@ body{
     top: -240px;
     width: 605px;
     height: 605px;
-    background-color: #1a232a;
+    background-color: #000816;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
@@ -212,20 +208,16 @@ body{
     background-image: url('../icons/Group\ 66.svg');
 }
 
-
 .redirect_button{
+    padding: 5% 50%;
     display:flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 10%;
+    height: 20%;
+    
     left: 50%;
 }
-@media (max-width: 1105px){
-    .redirect_button{
-        display: none;
-    }
-}
+
 .top__conic:hover::after {
 	animation: opacityChange 5s infinite linear;
 }
@@ -239,35 +231,8 @@ body{
 	}
 }
 
-.running{
-    padding: 15px;
-    margin: 30px auto;
-    font-family: 'EuropeExt', arial;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 45px;
-    letter-spacing: 0em;
-    color:#FFFFFF;
-    max-width: 80%;
-    
-}
-
 .top{
     position: relative;
-}
-
-.marquee-text{
-    font-family: 'EuropeExt';
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 45px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: black;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
 }
 
 @keyframes slide1 {
@@ -315,58 +280,27 @@ body{
     
 }
 
-.aboutHack{
-    padding: 5% 5%;
-    font-family: 'Ruberoid';
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 47px;
-    letter-spacing: 0em;
-    color: white;
-    text-align: justified;
 
+
+
+.format{
+    padding: 88px 0px 147px 0px; 
 }
 
 .format__text{
-    padding: 5%;
+    padding: 39px 0px 0px 0px;
 }
 
-.title{
-    font-family: 'EuropeExt';
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 45px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFFFF;
-
-}
-
-.hackInNumbers__text{
-    padding: 5%;
-    text-align: center;
-}
-
-.text{
-    font-family: 'Ruberoid';
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 47px;
-    letter-spacing: 0em;
-    color:#FFFFFF;
-}
 
 .timer{
     margin: auto;
     font-family: 'Digital-7 Mono';
     display: flex;
     justify-content: space-between;
-    width: 505px;
+    max-width: 505px;
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    position: relative;
 }
 
 .timer__text{
@@ -400,3 +334,320 @@ body{
     text-align: center;
 
 }
+
+/* adequat approach starts here */
+
+.container{
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+}
+
+.title{
+    font-family: 'EuropeExt';
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 767px){
+    .title{
+        font-size: 25px;
+    }
+}
+
+
+.text{
+    font-family: 'Ruberoid';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: white;
+}
+
+@media (max-width: 767px){
+    .text{
+        font-size: 23px;
+    }
+}
+
+
+.about-hack{
+    padding: 170px 0px 88px;
+}
+
+.about-hack__text{
+
+}
+
+.format{
+    padding: 80px 0px 147px;
+}
+.format__title{
+
+}
+
+.format__text{
+
+}
+.hack-in-numbers{
+    padding: 147px 0px 178px;
+}
+.hack-in-numbers__title{
+
+}
+.hack-in-numbers__text_2021{
+    text-align: center;
+    padding: 34px 0px 143px;
+}
+
+.hack-in-numbers__text{
+    text-align: center;
+}
+.hack-in-numbers__icons{
+}
+
+.hack-in-numbers__row{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+    justify-content: space-between;
+}
+
+.hack-in-numbers__box{
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 5px;
+    width: 318px;
+    height: 342px;
+    padding: 1%;
+    margin: 10px auto;
+}
+
+.hack-in-numbers__box img{
+    display: block;
+    max-width: 100%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.categories{
+    padding: 178px 0px 119px;
+}
+
+.categories__title{
+    padding: 0px 0px 65px 0px;
+}
+
+
+.categories__text{
+
+}
+
+.what-you-get{
+    padding: 119px 0px 130px; 
+}
+
+.what-you-get__title{
+    padding: 0px 0px 95px 0px;
+}
+
+.what-you-get__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.what-you-get__column{
+    margin: 0 auto;
+}
+
+.what-you-get__item{
+    padding: 2%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    width: 310px;
+    height: 310px;
+    margin: 30px auto;
+}
+
+.what-you-get__item img{
+    display: block;
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+}
+.what-you-get__text{
+    text-align: center;
+}
+
+.how-to-apply{
+    padding: 130px 0px 168px;
+}
+
+.how-to-apply__title{
+    padding: 0px 0px 94px 0px;
+}
+
+.how-to-apply__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.how-to-apply__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.how-to-apply__text{
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+}
+.faq{
+    padding: 168px 0px 74px;
+}
+.faq__title{
+    padding: 0px 0px 46px 0px;
+}
+.faq__column{
+    display: flex;
+    flex-direction: column;
+}
+.faq__item{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+.faq__text{
+
+}
+.faq__questions{
+    padding: 68px 0px 0px 0px;
+    
+}
+.faq__text_questions{
+    text-align: center;
+    color: #A9CDEF;
+}
+.faq__text_bot{
+
+}
+.about-best{
+
+}
+.about-best__title{
+    padding: 0px 0px 43px 0px;
+}
+
+.about-best p{
+    padding: 0px 0px 32px 0px;
+}
+.about-best__row{
+
+}
+.about-best__column{
+
+}
+.about-best__text{
+
+}
+.about-best__list-item{
+}
+
+/* bullshit is here */
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+
+.categories__row{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.categories__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categories__table {
+    margin: 0 auto;
+	position: relative;
+	z-index: 0;
+	width: 1100px;
+	height: 690px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.categories__table::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #000816;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
+    animation: rotate 4s linear infinite;
+}
+
+.categories__table::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #000816;
+    border-radius: 5px;
+}
+
+
+/* even more bullshit */
+
+
