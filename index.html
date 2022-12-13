@@ -11,51 +11,53 @@
 	<title>INT20H</title>
 </head>
 <body>
+	
+
+
+	
 	<div class="wrapper">
-		
+		<header class="header">
+			<div class="timer">
+				<div class="timer__days">
+					<div class="timer__amount">
+						00
+					</div>
+					<div class="timer__text">
+						DAYS
+					</div>
+				</div>
+				<div class="timer__dots">:</div>
+				<div class="timer__hours">
+					<div class="timer__amount">
+						00
+					</div>
+					<div class="timer__text">
+						HOURS
+					</div>
+				</div>
+				<div class="timer__dots">:</div>
+				<div class="timer__minutes">
+					<div class="timer__amount">
+						00
+					</div>
+					<div class="timer__text">
+						MINUTES
+					</div>
+				</div>
+				<div class="timer__dots">:</div>
+				<div class="timer__seconds">
+					<div class="timer__amount">
+						00
+					</div>
+					<div class="timer__text">
+						SECONDS
+					</div>
+				</div>
+			</div>
+		</header>
 
 		<div class="content">
 			<div class="top">
-				<header class="header">
-					<div class="timer">
-						<div class="timer__days">
-							<div class="timer__amount">
-								00
-							</div>
-							<div class="timer__text">
-								DAYS
-							</div>
-						</div>
-						<div class="timer__dots">:</div>
-						<div class="timer__hours">
-							<div class="timer__amount">
-								00
-							</div>
-							<div class="timer__text">
-								HOURS
-							</div>
-						</div>
-						<div class="timer__dots">:</div>
-						<div class="timer__minutes">
-							<div class="timer__amount">
-								00
-							</div>
-							<div class="timer__text">
-								MINUTES
-							</div>
-						</div>
-						<div class="timer__dots">:</div>
-						<div class="timer__seconds">
-							<div class="timer__amount">
-								00
-							</div>
-							<div class="timer__text">
-								SECONDS
-							</div>
-						</div>
-					</div>
-				</header>
-
 				<div class="container">
 					<div class="top__row">
 						<div class="top__logo">
@@ -65,26 +67,27 @@
 							<button class="top__registration">
 								<p>ЗАРЕЄСТРУВАТИСЯ</p>
 							</button>
-							<div class="top__format">
+							<p class="top__format">
 								ONLINE
-							</div>
-							<div class="top__date">
+							</p>
+							<p class="top__date">
 								March 4-5, 2023
-							</div>
+							</p>
 						</div>	
 					</div>
+					<div class="redirect__button">
+						<a href="#running-string" alt="">
+							<img src="img/Arrow 1.svg" alt="">
+						</a>
+					</div>
 				</div>
-				<div class="redirect_button">
-					<a href="google.com" alt="">
-						<img src="icons/Group 66.svg" alt="">
-					</a>
-				</div>
+				
 				
 				<canvas id="canvas" class="canvas"></canvas>
 			</div>
 			
 
-			<div class="running-string">
+			<div id="running-string" class="running-string">
 				<span>LET'S HACK YOURSELF LET'S HACK YOURSELF LET'S HACK YOURSELF </span>
 			</div>
 			
@@ -164,7 +167,7 @@
 					<div class="categories__table">
 						<div class="categories__row">
 							<div class="categories__column">
-								<img src="img/web-dev.svg" alt="">
+								<img src="img/web-dev.svg" alt="" class="categories__column_img">
 								<img src="img/mobile-dev.svg" alt="">
 								<img src="img/data-science.svg" alt="">
 							</div>
@@ -264,25 +267,25 @@
 					</div>
 					<div class="how-to-apply__row">
 						<div class="how-to-apply__item">
-							<img src="img/step.svg" alt="">
+							<img src="img/step01.svg" alt="">
 							<p class="how-to-apply__text text">
 								Зареєструйся до 22.01
 							</p>
 						</div>
 						<div class="how-to-apply__item">
-							<img src="img/step.svg" alt="">
+							<img src="img/step02.svg" alt="">
 							<p class="how-to-apply__text text">
 								Виконай тестове завдання до 29.01
 							</p>
 						</div>
 						<div class="how-to-apply__item">
-							<img src="img/step.svg" alt="">
+							<img src="img/step03.svg" alt="">
 							<p class="how-to-apply__text text">
 								Отримай запрошення до 12.02
 							</p>
 						</div>
 						<div class="how-to-apply__item">
-							<img src="img/step.svg" alt="">
+							<img src="img/step04.svg" alt="">
 							<p class="how-to-apply__text text">
 								Долучайся до INT20H 04-05.03
 							</p>
@@ -298,56 +301,103 @@
 					</div>
 					<div class="faq__column">
 						<div class="faq__item">
+							<input id="question1" type="checkbox" class="faq__text text">
 							
-							<p class="faq__text text">
-							Участь безкоштовна?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
-						</div>
-						<div class="faq__item">
+							<label for="question1" class="question">
+								<p class="faq__question text">
+									Участь безкоштовна?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									Так, участь у хакатоні абсолютно безкоштовна.
+								</p>
+							</label>
 							
-							<p class="faq__text text">
-								Який початковий поріг знань?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
 						</div>
 						<div class="faq__item">
-						
-							<p class="faq__text text">
-								Хто може взяти участь?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
+							<input id="question2" type="checkbox" class="faq__text text">
+							
+							<label for="question2" class="question">
+								<p class="faq__question text">
+									Який початковий поріг знань?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									Для участі потрібен мінімальний рівень знань. Він буде визначений за допомогою тестового завдання, що виконується після реєстрації. Той, хто успішно його виконає, потрапить на хакатон. Тому не вагайся — подавайся!
+								</p>
+							</label>
 						</div>
 						<div class="faq__item">
-
-							<p class="faq__text text">
-								Якою має бути команда?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
+							<input id="question3" type="checkbox" class="faq__text text">
+							<label for="question3" class="question">
+								<p class="faq__question text">
+									Хто може взяти участь?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									Взяти участь у хакатоні може команда, що складається з 2-4 студентів, віком до 25 років кожен.
+								</p>
+							</label>
 						</div>
 						<div class="faq__item">
-							<p class="faq__text text">
-								Що робити, якщо я не маю команди?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
+							<input id="question4" type="checkbox" class="faq__text text">
+							<label for="question4" class="question">
+								<p class="faq__question text">
+									Якою має бути команда?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									Команда має складатися з 2-4 учасників. Обов’язково програмістів? Ні. Якщо ти знаєш, як представити продукт користувачам не зі сторони написання коду, тоді welcome, але хоча б один розробник в команді має бути.
+								</p>
+							</label>
 						</div>
 						<div class="faq__item">
-							<p class="faq__text text">
-								Скільки буде переможців?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
+							<input id="question5" type="checkbox" class="faq__text text">
+							<label for="question5" class="question">
+								<p class="faq__question text">
+									Що робити, якщо я не маю команди?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									Не панікуй! Реєструйся, та приєднуйся до чату де ти зможеш знайти свою команду однодумців.
+								</p>
+							</label>
 						</div>
 						<div class="faq__item">
-							<p class="faq__text text">
-								Що робити у разі повітряної тривоги?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
+							<input id="question6" type="checkbox" class="faq__text text">
+							<label for="question6" class="question">
+								<p class="faq__question text">
+									Скільки буде переможців?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									У кожній категорії за оголошеними критеріями журі визначають 3 команди-переможці.
+								</p>
+							</label>
 						</div>
 						<div class="faq__item">
-							<p class="faq__text text">
-								Що робити, якщо вимкнуть світло?
-							</p>
-							<img src="img/faq-arrow.svg" alt="">
+							<input id="question7" type="checkbox" class="faq__text text">
+							<label for="question7" class="question">
+								<p class="faq__question text">
+									Що робити у разі повітряної тривоги?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									Організатори не несуть відповідальності за життя учасників. Рекомендуємо подбати про укриття з електропостачанням й інтернетом на випадок повітряної тривоги. Час при цьому зупинятись не буде.
+								</p>
+							</label>
+						</div>
+						<div class="faq__item">
+							<input id="question8" type="checkbox" class="faq__text text">
+							<label for="question8" class="question">
+								<p class="faq__question text">
+									Що робити, якщо вимкнуть світло?
+								</p>
+								<img src="img/faq-arrow.svg" alt="">
+								<p class="faq__answer text">
+									У разі відключення світла організатори готові піти на поступки і дати додатковий час, або ж можливість раніше/пізніше виступити.
+								</p>
+							</label>
 						</div>
 					</div>
 					<div class="faq__questions">

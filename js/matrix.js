@@ -1,5 +1,6 @@
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
+const topElement = document.querySelector(".top");
 
 const fontHeight = 14;
 const fontFamily = "Meiryo, monospace";
@@ -56,6 +57,9 @@ let colsPerLine;
 let charsOnCol;
 
 const setCanvasExtents = () => {
+
+	console.log("Top height: " + topElement.style.height);
+	console.log("Window height: " + window.innerHeight);
 
 	w = canvas.parentElement.clientWidth;// document.body.clientWidth;
 	h = canvas.parentElement.clientHeight; //document.body.clientHeight;

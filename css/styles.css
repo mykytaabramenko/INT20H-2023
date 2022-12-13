@@ -47,6 +47,7 @@ a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 
 html,body{
+    scroll-behavior: smooth;
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -80,11 +81,25 @@ body{
 }
 
 .header{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
+    z-index: 10;
+    opacity: 1;
 }
+
 .content{
     flex: 1 1 auto;
+}
+
+.top{
+    position: relative;
+    height: 100vh;
+    padding: 10% 0;
+}
+
+.top__logo{
+    margin: 0 auto;
 }
 
 .top__logo img{
@@ -95,6 +110,7 @@ body{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .timer{
@@ -111,6 +127,7 @@ body{
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    margin: 0 auto;
 
 }
 
@@ -162,7 +179,17 @@ body{
 	max-width: 592px;
 	height: 114px;
 	border-radius: 10px;
+    background-color: #000816;
 	overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.top__registration:hover{
+    padding: 29px 24px;
+    transition-duration: 0.5s;
+    border-color: rgba(168, 239, 255, 1);
+    border-style: solid;
+    border-width: 5px;
 }
 
 .top__registration::before {
@@ -180,6 +207,14 @@ body{
     animation: rotate 4s linear infinite;
 }
 
+.top__registration:hover:before{
+    display: none;
+}
+
+.top__registration:hover:after{
+    display: none;
+}
+
 
 .top__registration::after {
     content: '';
@@ -191,8 +226,8 @@ body{
     height: calc(100% - 12px);
     background: #000816;
     border-radius: 5px;
-    transition-duration: 1s;
 }
+
 
 .top__registration p{
     font-family: 'EuropeExt';
@@ -204,19 +239,49 @@ body{
     color: white;
 }
 
+@media (max-width: 1200px){
+    .top__registration p{
+        font-size: 30px;
+    }
+}
+
 .button{
     border-radius: 50%;
     background-image: url('../icons/Group\ 66.svg');
 }
 
 .redirect_button{
-    padding: 5% 50%;
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
-    left: 50%;
+    height: 500px;
 }
+
+.redirect__button a{
+    text-align: center;
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #A9CDEF;
+    border-width: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+.redirect__button img{
+    width: 70%;
+    height: 70%;
+}
+
+.redirect__button a:hover{
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 20px 5px #A9CDEF;
+}
+
 
 .top__registration:hover::after {
     transition-duration: 1s;
@@ -232,9 +297,6 @@ body{
 	}
 }
 
-.top{
-    position: relative;
-}
 
 @keyframes slide1 {
     0% { 
@@ -339,7 +401,7 @@ body{
 /* adequat approach starts here */
 
 .container{
-    max-width: 80%;
+    max-width: 1700px;
     margin: 0px auto;
     padding: 0px 15px;
 }
@@ -448,14 +510,27 @@ body{
     border-style: solid;
     border-width: 5px;
     padding: 2%;
-    max-width: 318px;
-    max-height: 342px;
-    margin: 10px auto;
+    width: 318px;
+    height: 342px;
+    margin: 0px 10px;
+    animation: border-hack-in-numbers 4s infinite;
+}
+
+@keyframes border-hack-in-numbers{
+    0% {
+        border-color: white;
+    }
+    50% {
+        border-color: #000816;
+    }
+    100% {
+        border-color: white;
+    }
 }
 
 .hack-in-numbers__box img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: 80%;
     margin: 0 auto;
 }
@@ -502,7 +577,7 @@ body{
     border-width: 5px;
     max-width: 310px;
     height: 310px;
-    margin: 30px auto;
+    margin: 15px 15px;
 }
 
 .what-you-get__item img{
@@ -514,6 +589,8 @@ body{
 .what-you-get__text{
     font-size: 24px;
     text-align: center;
+
+    text-shadow: white 0px 0px 10px;
 }
 
 .how-to-apply{
@@ -535,19 +612,20 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 20%;
+    max-width: 25%;
 }
 
 .how-to-apply__text{
+    height: 100%;
     text-align: center;
     font-size: 30px;
-    width: 100%;
+    width: 80%;
 }
 .faq{
     padding: 168px 0px 74px;
 }
 .faq__title{
-    padding: 0px 0px 46px 0px;
+    padding: 0px 0px 50px 0px;
     font-size: 64px;
 }
 .faq__column{
@@ -555,15 +633,22 @@ body{
     flex-direction: column;
 }
 
-.faq__item{
-    padding: 22px 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-style: solid;
-    border-width: 3px 3px 1.5px 3px;
-    border-color: white;
+.faq__item:last-child{
+    border-width: 2.5px 5px 5px 5px;
 }
+
+.faq__item:first-child{
+    border-width: 5px 5px 2.5px 5px;
+}
+
+.faq__item{
+    
+    border-style: solid;
+    border-width: 2.5px 5px 2.5px 5px;
+    border-color: white;
+    position: relative;
+}
+
 .faq__text{
     padding: 0px 20px 0px 0px;
 }
@@ -577,7 +662,7 @@ body{
 }
 .faq__text_bot{
     color: #A9CDEF;
-    text-shadow: #A9CDEF 5px 5px 10px;
+    text-shadow: #A9CDEF 0px 0px 20px;
 }
 .about-best{
 
@@ -609,13 +694,11 @@ body{
 	}
 }
 
-
 .categories__row{
-    padding: 5% 0 5%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 100%;
 
 }
 
@@ -624,6 +707,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 5%;
 }
 
 .categories__column{
@@ -640,14 +724,26 @@ body{
     text-align: left;
 }
 
+.categories__column_img::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    background-image: url('../img/Ellipse\ 2.svg');
+    box-shadow: 10px 10px 10px white;
+}
+
 .categories__table {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 0 auto;
 	position: relative;
 	z-index: 0;
 	max-width: 1100px;
-	max-height: 690px;
-	border-radius: 10px;
+	height: 690px;
 	overflow: hidden;
+   
 }
 
 .categories__table::before {
@@ -680,4 +776,51 @@ body{
 
 /* even more bullshit */
 
+input {
+    display: none;
+}
+
+.accordion {
+    width: 400px;
+}
+
+.question {
+    display: block;
+}
+
+.question img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.faq__question {
+
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+}
+
+input:checked ~ .question .faq__answer {
+    max-height: 1000px;
+    padding: 20px 20px;
+    border-width: 5px 0 0 0;
+
+}
+
+input:checked ~ .question img{
+    rotate: 90deg;
+}
+
+.faq__answer {
+    width: 100%;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background:#3B82AA;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    border-color: #FFFFFF;
+    border-style: solid;
+    
+}
 
