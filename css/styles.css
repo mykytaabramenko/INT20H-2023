@@ -450,6 +450,7 @@ body{
     letter-spacing: 0em;
     text-align: justify;
     color: white;
+    -webkit-text-stroke: 1px white;
 }
 
 @media (max-width: 767px){
@@ -643,11 +644,14 @@ body{
     margin: 0 auto;
 }
 
+.what-you-get__item_front p{
+    filter: drop-shadow(0 0 12px #A9CDEF);
+    -webkit-text-stroke: 1px white;
+}
+
 .what-you-get__text{
     font-size: 24px;
     text-align: center;
-
-    text-shadow: 0px 0px 12px rgba(169, 205, 239, 0.7);
 }
 
 .how-to-apply{
@@ -677,6 +681,21 @@ body{
     text-align: center;
     font-size: 30px;
     width: 80%;
+}
+
+.agenda{
+    padding: 160px 0px 160px 0px;
+}
+
+.agenda__text{
+    padding: 76px 0px 0px 0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+
 }
 .faq{
     padding: 168px 0px 74px;
@@ -710,16 +729,32 @@ body{
     padding: 0px 20px 0px 0px;
 }
 .faq__questions{
-    padding: 68px 0px 0px 0px;
-    
+    padding: 68px 0px 0px 0px;   
 }
+
+.faq__text_questions a{
+    color: #A9CDEF;
+    filter: drop-shadow(0 0 15px #A9CDEF);
+}
+
+.faq__text_questions{
+    filter: drop-shadow(0 0 12px #A9CDEF);
+    -webkit-text-stroke: 1px #A9CDEF;
+
+}
+
+.faq__text_questions{
+    font-family: 'Ruberoid';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 47px;
+    text-align: center;
+    filter: drop-shadow(0 0 15px #A9CDEF);
+}
+
 .faq__text_questions{
     text-align: center;
     color: #A9CDEF;
-}
-.faq__text_bot{
-    color: #A9CDEF;
-    text-shadow: #A9CDEF 0px 0px 20px;
 }
 .about-best{
 
