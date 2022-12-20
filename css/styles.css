@@ -132,7 +132,7 @@ body{
 }
 
 .top__format{
-    padding: 20px 0px;
+    
     font-family: 'EuropeExt', arial;
     font-size: 32px;
     font-style: italic;
@@ -144,6 +144,7 @@ body{
 }
 
 .top__date{
+    padding: 20px 0px;
     font-family: 'EuropeExt', arial;
     font-size: 32px;
     font-style: italic;
@@ -151,7 +152,7 @@ body{
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left; 
-    color:white;     
+    color:white; 
 }
 
 #canvas {
@@ -401,12 +402,12 @@ body{
 /* adequat approach starts here */
 
 .container{
-    max-width: 1700px;
+    max-width: 1500px;
     margin: 0px auto;
     padding: 0px 15px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1600px){
     .container{
         max-width: 970px;
     }
@@ -709,13 +710,6 @@ body{
     flex-direction: column;
 }
 
-.faq__item:last-child{
-    border-width: 2.5px 5px 5px 5px;
-}
-
-.faq__item:first-child{
-    border-width: 5px 5px 2.5px 5px;
-}
 
 .faq__item{
     
@@ -723,6 +717,14 @@ body{
     border-width: 2.5px 5px 2.5px 5px;
     border-color: white;
     position: relative;
+}
+
+.faq__item:last-child{
+    border-width: 2.5px 5px 5px 5px;
+}
+
+.faq__item:first-child{
+    border-width: 5px 5px 2.5px 5px;
 }
 
 .faq__text{
@@ -808,7 +810,7 @@ body{
     justify-content: space-around;
 }
 
-.categories__column img{
+.categories__img{
     margin: 0 auto;
 }
 
@@ -816,12 +818,16 @@ body{
     text-align: left;
 }
 
-.categories__column_img::after{
-    content: '';
+.categories__img::after{
+    content: "";
     position: absolute;
     bottom: 0px;
-    background-image: url('../img/Ellipse\ 2.svg');
-    box-shadow: 10px 10px 10px white;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Ellipse.svg');
+    background-repeat: no-repeat;
+    background-position: 75% 75%;
+    filter: drop-shadow(0 4px 50px #A9CDEF);
 }
 
 .categories__table {
@@ -901,11 +907,6 @@ input:checked ~ .question .faq__answer {
     transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
-input:checked ~ .question .faq__answer {
-    padding: 20px 20px;
-    max-height: 1000px;
-    border-width: 5px 0 0 0;
-}
 
 input:checked ~ .question img{
     transform: rotate(90deg);
@@ -920,6 +921,67 @@ input:checked ~ .question img{
     background:#3B82AA;
     transition: max-height 0.3s ease, padding 0.3s ease;
     border-color: #FFFFFF;
+    border-style: solid;   
+}
+
+/* organizers related*/
+
+.organizers{
+    padding: 50px 0 0 0;
+}
+
+.organizers__title{
+
+}
+
+.organizers__grid{
+
+}
+.organizers__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px 0px;
+}
+
+.organizers__item{
+    border-width: 2px;
+    border-color: #A9CDEF;
     border-style: solid;
+    box-shadow: 0px 0px 12px #A9CDEF;
+    width: 242px;
+    height: 330px; 
     
+}
+
+.organizers__item img{
+    width: 100%;
+    height: 70%;
+}
+
+.organizers__item p{
+    height: 10%;
+}
+
+
+.organizers__name{
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: 0em;
+
+
+}
+
+.organizers__position{
+    font-size: 13px;
+    text-align: center;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+.organizers__email{
+    font-size: 13px;
+    text-align: center;
+    line-height: 19px;
+    letter-spacing: 0em;
 }
