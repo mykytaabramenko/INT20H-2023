@@ -58,9 +58,6 @@ let charsOnCol;
 
 const setCanvasExtents = () => {
 
-	console.log("Top height: " + topElement.style.height);
-	console.log("Window height: " + window.innerHeight);
-
 	w = canvas.parentElement.clientWidth;// document.body.clientWidth;
 	h = canvas.parentElement.clientHeight; //document.body.clientHeight;
 	canvas.width = w;

@@ -18,7 +18,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="timer">
-				<div class="timer__days">
+				<div class="timer__section">
 					<div class="timer__amount">
 						00
 					</div>
@@ -27,7 +27,7 @@
 					</div>
 				</div>
 				<div class="timer__dots">:</div>
-				<div class="timer__hours">
+				<div class="timer__section">
 					<div class="timer__amount">
 						00
 					</div>
@@ -36,7 +36,7 @@
 					</div>
 				</div>
 				<div class="timer__dots">:</div>
-				<div class="timer__minutes">
+				<div class="timer__section">
 					<div class="timer__amount">
 						00
 					</div>
@@ -45,7 +45,7 @@
 					</div>
 				</div>
 				<div class="timer__dots">:</div>
-				<div class="timer__seconds">
+				<div class="timer__section">
 					<div class="timer__amount">
 						00
 					</div>
@@ -112,12 +112,10 @@
 					</div>
 					
 				</div>
-				
-				
 			</div>
 
 			<div class="hack-in-numbers">
-				<div class="container">
+				
 					<div class="hack-in-numbers__title title">
 						ХАКАТОН У ЦИФРАХ
 					</div>
@@ -156,7 +154,7 @@
 						
 						</div>
 					</div>
-				</div>
+				
 			</div>
 
 			<div class="categories">
@@ -167,9 +165,16 @@
 					<div class="categories__table">
 						<div class="categories__row">
 							<div class="categories__column">
-								<img src="img/web-dev.svg" alt="" class="categories__img">
-								<img src="img/mobile-dev.svg" alt="" class="categories__img">
-								<img src="img/data-science.svg" alt="" class="categories__img">
+								<div class="categories__img">
+									<img src="img/web-dev.svg" alt="">
+								</div>
+								<div class="categories__img">
+									<img src="img/mobile-dev.svg" alt="" class="categories__img">
+								</div>
+								<div class="categories__img">
+									<img src="img/data-science.svg" alt="" class="categories__img">
+								</div>
+								
 							</div>
 							<div class="categories__column">
 								<p class="categories__text text">Web development</p>
@@ -177,26 +182,6 @@
 								<p class="categories__text text">Data Science</p>
 							</div>
 						</div>
-						
-						<!--
-							<div class="categories__row">
-							<div class="categories__item">
-								<img src="img/web-dev.svg" alt="">
-								<p class="categories__text text">Web development</p>
-							</div>
-							<div class="categories__item">
-								<img src="img/mobile-dev.svg" alt="">
-								<p class="categories__text text">Mobile development</p>
-							</div>
-							<div class="categories__item">
-								<img src="img/data-science.svg" alt="">
-								<p class="categories__text text">Data Science</p>
-							</div>
-						</div>
-
-						-->
-						
-						
 					</div>
 				</div>
 			</div>
@@ -462,46 +447,6 @@
 				</div>
 			</div>
 
-		
-
-			<div class="about-best">
-				<div class="container">
-					<div class="about-best__title title">
-						Про BEST
-					</div>
-					<div class="about-best__row">
-						<div class="about-best__column">
-							<p class="about-best__text text">
-								Board of European Students of Technology
-							</p>
-							<p class="about-best__text text">
-								BEST - це міжнародна волонтерська, неприбуткова, неполітична, нерелігійна студентська організація. Ми допомагаємо студентам, компаніям та університетам налагодити обмін ідеями та ефективну співпрацю для спільного створення кращого майбутнього.
-							</p>
-							<p class="about-best__text text">
-								<ul>
-									<li class="about-best__list-item text">32 країни</li>
-									<li class="about-best__list-item text">97 провідних технічних університетів</li>
-									<li class="about-best__list-item text">4500+ представників</li>
-								</ul>
-							</p>
-						</div>
-						<div class="about-best__column">
-							<!-- HERE WILL BE THE GLOBUS --->
-						</div>
-					</div>
-					<p class="about-best__text text">
-						Місія: Підтримка студентів у реалізації їхнього потенціалу та розвитку навичок роботи у міжнародній спільноті.
-					</p>
-					<p class="about-best__text text">
-						Візія: Сила у різноманітності. Ми поважаємо розмаїття культур та думок учасників, бо разом – ми сильніші.
-					</p>
-					<p class="about-best__text text">
-						BEST Kyiv працює на базі Київського політехнічного інститута імені І. Сікорського
-					</p>
-				</div>
-				
-			</div>
-
 			<div class="organizers">
 				<div class="container">
 					<p class="organizers__title title">
@@ -637,6 +582,66 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="about-best">
+				<div class="container">
+					<div class="about-best__title title">
+						Про BEST
+					</div>
+					<div class="about-best__row">
+						<div class="about-best__column">
+							<p class="about-best__text text">
+								Board of European Students of Technology
+							</p>
+							<p class="about-best__text text">
+								BEST - це міжнародна волонтерська, неприбуткова, неполітична, нерелігійна студентська організація. Ми допомагаємо студентам, компаніям та університетам налагодити обмін ідеями та ефективну співпрацю для спільного створення кращого майбутнього.
+							</p>
+							<div class="about-best__row">
+								<div class="about-best__numbers">
+									<p class="about-best__amount text">
+										32
+									</p>
+									<p class="about-best__desc text">
+										країни
+									</p>
+								</div>
+								<div class="about-best__numbers">
+									<p class="about-best__amount text">
+										97
+									</p>
+									<p class="about-best__desc text">
+										провідних технічних університетів
+									</p>
+								</div>
+								<div class="about-best__numbers">
+									<p class="about-best__amount text">
+										4500+
+									</p>
+									<p class="about-best__desc text">
+										представників
+									</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="about-best__column">
+							<!-- HERE WILL BE THE GLOBUS --->
+						</div>
+					</div>
+					<p class="about-best__text text">
+						Місія: Підтримка студентів у реалізації їхнього потенціалу та розвитку навичок роботи у міжнародній спільноті.
+					</p>
+					<p class="about-best__text text">
+						Візія: Сила у різноманітності. Ми поважаємо розмаїття культур та думок учасників, бо разом – ми сильніші.
+					</p>
+					<p class="about-best__text text">
+						BEST Kyiv працює на базі Київського політехнічного інститута імені І. Сікорського
+					</p>
+				</div>
+				
+			</div>
+
+			
 		</div>
 
 		
