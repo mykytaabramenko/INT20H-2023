@@ -124,6 +124,7 @@ body{
     top: 0;
     z-index: 10;
     opacity: 1;
+    transition: background-color 0.4s linear;
 }
 
 .content{
@@ -353,7 +354,7 @@ body{
 }
 
 .running-string {
-    top: -142px;
+    top: -120px;
     padding: 145px 0px 0px 0px;
     position: relative;
 }
@@ -420,7 +421,7 @@ body{
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
-    animation: dots 2s linear infinite;
+    /*animation: dots 1s linear infinite;*/
 }
 
 @keyframes dots{
@@ -439,7 +440,8 @@ body{
     font-family: 'Digital-7 Mono';
     font-size: 56px;
     font-weight: 400;
-    letter-spacing: 0em;    
+    letter-spacing: 0em;   
+    text-align: center;
 }
 
 /* adequat approach starts here */
@@ -814,7 +816,7 @@ body{
     text-align: center;
 }
 
-..about-best__desc{
+.about-best__desc{
     font-family: 'Ruberoid';
     font-size: 32px;
     font-weight: 300;
@@ -1040,4 +1042,20 @@ input:checked ~ .question img{
     text-align: center;
     line-height: 19px;
     letter-spacing: 0em;
+}
+
+
+.about-best__photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-best__photo{
+    filter: drop-shadow(0px 0px 23px rgba(169, 205, 239, 0.7));
+}
+
+.about-best__photo img{
+    width: 100%;
 }
