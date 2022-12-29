@@ -1,11 +1,10 @@
 header = document.querySelector('.header');
-runningString = document.querySelector('.running-string');
+topLogo = document.querySelector('.top__logo');
     
-console.log(header);
 
 document.addEventListener("scroll", (e) => {
     
-    if(header.getBoundingClientRect().top >= runningString.getBoundingClientRect().top - 100){
+    if(header.getBoundingClientRect().bottom >= topLogo.getBoundingClientRect().top){
         header.style.backgroundColor = '#000816';
     } else {
         header.style.backgroundColor = 'transparent';

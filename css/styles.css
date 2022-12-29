@@ -83,10 +83,10 @@ body{
 
 .title{
     font-family: 'EuropeExt';
-    font-size: 40px;
+    font-size: 32px;
     font-style: italic;
     font-weight: 700;
-    line-height: 45px;
+    line-height: 35px;
     letter-spacing: 0em;
     text-align: center;
     color: white;
@@ -138,7 +138,7 @@ body{
 
 .top__logo{
     margin: 0 auto;
-    width: 432px;
+    width: 500px;
     height: 358px;
 }
 
@@ -357,6 +357,7 @@ body{
     top: -120px;
     padding: 145px 0px 0px 0px;
     position: relative;
+    margin: 0 0 40px 0;
 }
 
 
@@ -378,21 +379,12 @@ body{
     -webkit-text-stroke-color: white;
 }
 
-.format{
-    margin: 70px 0px 150px 0px; 
-}
-
-.format__text{
-    padding: 40px 0px 0px 0px;
-}
-
-
 .timer{
     margin: auto;
     display: flex;
     justify-content: space-between;
     width: 345px;
-    padding: 35px 0;
+    padding: 25px 0;
     flex-direction: row;
     align-items: center;
     color: white;
@@ -470,28 +462,28 @@ body{
     }
 }
 
+/* related about hackathon section */
 
 .about-hack{
-    margin: 70px 0px 70px 0px;
+    margin: 40px 0px 70px 0px;
 }
 
-.about-hack__text{
+/* related format */
 
-}
-
-.format__title{
-
+.format{
+    margin: 70px 0px 180px 0px; 
 }
 
 .format__text{
-
+    padding: 40px 0px 0px 0px;
 }
+
+/* related hack in numbers section*/
+
 .hack-in-numbers{
-    margin: 150px 0px 150px 0px;
+    margin: 180px 0px 180px 0px;
 }
-.hack-in-numbers__title{
 
-}
 .hack-in-numbers__text_2021{
     text-align: center;
     padding: 34px 0px 143px;
@@ -500,8 +492,6 @@ body{
 .hack-in-numbers__text{
     text-align: center;
     line-height: 35px;
-}
-.hack-in-numbers__icons{
 }
 
 .hack-in-numbers__row{
@@ -553,8 +543,10 @@ body{
     margin: 0 auto;
 }
 
+/* related categories */
+
 .categories{
-    margin: 150px 0px 150px;
+    margin: 180px 0px 180px;
 }
 
 .categories__title{
@@ -562,24 +554,107 @@ body{
 }
 
 
+.categories__table {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+	position: relative;
+	z-index: 0;
+	max-width: 1100px;
+	height: 690px;
+	overflow: hidden;
+   
+}
+
+.categories__table::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 280%;
+    background-color: #000816;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
+    animation: rotate 4s linear infinite;
+}
+
+.categories__table::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #000816;
+    border-radius: 5px;
+}
+
+
+.categories__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.categories__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.categories__img{
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.categories__img::after{
+    content: "";
+    position: absolute;
+
+    border-radius: 50%;
+    bottom: -10px;
+    right: 0px;
+    left: -10%;
+    width: 120%;
+    height: 46px;
+    box-shadow: 0px 4px 25px #A9CDEF;
+    
+}
+
+.categories__img img{
+    width: 145px;
+}
+
+
 .categories__text{
     text-align: left;
 }
 
+/* related what you get from hackathon section */
+
 .what-you-get{
-    margin: 150px 0px 150px; 
+    margin: 180px 0px 180px; 
 }
 
 .what-you-get__title{
     padding: 0px 0px 95px 0px;
 }
 
-.what-you-get__content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+.what-you-get__text{
+    font-size: 24px;
+    text-align: center;
 }
+
 .what-you-get__row{
     margin: 0 auto;
     display: flex;
@@ -648,7 +723,6 @@ body{
 
 }
 
-
 .what-you-get__item:hover{
     transform: rotateY(180deg);
 }
@@ -665,13 +739,10 @@ body{
     -webkit-text-stroke: 1px white;
 }
 
-.what-you-get__text{
-    font-size: 24px;
-    text-align: center;
-}
+/* related how to apply section */
 
 .how-to-apply{
-    padding: 130px 0px 168px;
+    margin: 180px 0px 180px;
 }
 
 .how-to-apply__title{
@@ -699,8 +770,11 @@ body{
     width: 80%;
 }
 
+
+/* related agenda section */
+
 .agenda{
-    padding: 160px 0px 160px 0px;
+    margin: 360px 0px 360px 0px;
 }
 
 .agenda__text{
@@ -713,8 +787,11 @@ body{
     text-align: center;
 
 }
+
+/* related faq section */
+
 .faq{
-    padding: 168px 0px 74px;
+    margin: 180px 0px;
 }
 .faq__title{
     padding: 0px 0px 50px 0px;
@@ -755,178 +832,19 @@ body{
 }
 
 .faq__text_questions{
-    filter: drop-shadow(0 0 12px #A9CDEF);
-    -webkit-text-stroke: 1px #A9CDEF;
-
-}
-
-.faq__text_questions{
     font-family: 'Ruberoid';
     font-size: 32px;
     font-weight: 300;
     line-height: 47px;
     text-align: center;
     filter: drop-shadow(0 0 15px #A9CDEF);
+    -webkit-text-stroke: 1px #A9CDEF;
 }
 
 .faq__text_questions{
     text-align: center;
     color: #A9CDEF;
 }
-.about-best{
-
-}
-.about-best__title{
-    padding: 0px 0px 43px 0px;
-}
-
-.about-best p{
-    padding: 0px 0px 32px 0px;
-}
-.about-best__row{
-
-}
-.about-best__column{
-
-}
-.about-best__text{
-
-}
-.about-best__list-item{
-}
-
-.about-best__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about-best__numbers{
-    display: flex;
-    flex-direction: column;
-    width: 364px;
-}
-
-.about-best__amount{
-    font-family: 'Ruberoid';
-    font-size: 64px;
-    font-weight: 300;
-    line-height: 93px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.about-best__desc{
-    font-family: 'Ruberoid';
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 93px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-/* bullshit is here */
-
-@keyframes rotate {
-	100% {
-		transform: rotate(1turn);
-	}
-}
-
-.categories__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100%;
-
-}
-
-.categories__item{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5%;
-}
-
-.categories__column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.categories__img{
-    margin: 0 auto;
-    position: relative;
-
-}
-
-.categories__img img{
-    background-image: black;
-    width: 145px;
-    z-index: 1;
-}
-
-.categories__item p{
-    text-align: left;
-}
-
-.categories__img::after{
-    content: "";
-    position: absolute;
-
-    border-radius: 50%;
-    bottom: -10px;
-    right: 0px;
-    left: -10%;
-    width: 120%;
-    height: 46px;
-    box-shadow: 0px 4px 25px #A9CDEF;
-    
-}
-
-.categories__table {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 auto;
-	position: relative;
-	z-index: 0;
-	max-width: 1100px;
-	height: 690px;
-	overflow: hidden;
-   
-}
-
-.categories__table::before {
-    content: '';
-    position: absolute;
-    z-index: -2;
-    left: -50%;
-    top: -50%;
-    width: 200%;
-    height: 280%;
-    background-color: #000816;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
-    animation: rotate 4s linear infinite;
-}
-
-.categories__table::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    left: 6px;
-    top: 6px;
-    width: calc(100% - 12px);
-    height: calc(100% - 12px);
-    background: #000816;
-    border-radius: 5px;
-}
-
-
-/* even more bullshit */
 
 input {
     display: none;
@@ -944,7 +862,7 @@ input {
     cursor: pointer;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 12px;
 }
 
 .faq__question {
@@ -982,10 +900,91 @@ input:checked ~ .question img{
     text-align: left; 
 }
 
-/* organizers related*/
+
+/* related about best section */
+
+.about-best{
+    margin: 180px 0;
+}
+.about-best__title{
+    padding: 0px 0px 43px 0px;
+}
+
+.about-best p{
+    padding: 0px 0px 32px 0px;
+}
+.about-best__row{
+
+}
+.about-best__column{
+
+}
+.about-best__text{
+
+}
+.about-best__list-item{
+}
+
+.about-best__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-best__numbers{
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+}
+
+.about-best__amount{
+    font-family: 'Ruberoid';
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.about-best__desc{
+    font-family: 'Ruberoid';
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+
+.about-best__photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-best__photo{
+    filter: drop-shadow(0px 0px 23px rgba(169, 205, 239, 0.7));
+    width: 350px;
+}
+
+.about-best__photo img{
+    width: 100%;
+}
+
+
+/* bullshit is here */
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+/* organizers section related*/
 
 .organizers{
-    padding: 50px 0 0 0;
+    margin: 180px 0px;
 }
 
 .organizers__title{
@@ -1045,17 +1044,78 @@ input:checked ~ .question img{
 }
 
 
-.about-best__photos{
+
+/*related final section */
+
+.final{
+    margin: 180px 0px;
+}
+
+.final__row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.about-best__photo{
-    filter: drop-shadow(0px 0px 23px rgba(169, 205, 239, 0.7));
+.final__text{
+
 }
 
-.about-best__photo img{
-    width: 100%;
+.final__button{
+    padding: 22.5px 40px;
+    font-family: 'EuropeExt';
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    height: 90px;
+    width: 550px;
+    border-radius: 20px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #A9CDEF;
+    background-color: #A9CDEF;
+    color: #000816;
+
+    transition: 0.5s ease;
+}
+
+
+.final__button:hover{
+    transition: 0.5s ease;
+    background-color:  #000816;
+    color:  #A9CDEF;
+}
+
+
+/* footer */
+
+.footer{
+
+}
+.footer__title{
+    font-family: 'Ruberoid';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #737373;
+}
+
+.footer__icons{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+.footer__icon:hover{
+    filter: drop-shadow(0 0 12px #A9CDEF);
 }
