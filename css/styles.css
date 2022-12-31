@@ -278,17 +278,17 @@ body{
 
 @media (max-width: 931px){
     .top__row{
+        padding: 120px 0 0 0;
+        flex-direction: column;
+    }
+}
+/*
+@media (max-width: 767px){
+    .top__row{
         padding: 130px 0 0 0;
         flex-direction: column;
     }
-}
-
-@media (max-width: 767px){
-    .top__row{
-        padding: 160px 0 0 0;
-        flex-direction: column;
-    }
-}
+}*/
 .top__second-row {
     display:flex;
     flex-wrap: wrap;
