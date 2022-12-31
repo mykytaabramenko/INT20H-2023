@@ -797,7 +797,7 @@ body{
         max-width: 146px;
         max-height: 156px;
         border-width: 3px;
-        margin: 22px 22px;
+        margin: 15px 15px;
     }
 }
 
@@ -1626,7 +1626,7 @@ input:checked ~ .question img{
 @media (max-width: 767px){
     .about-best__text{
         font-size: 16px;
-        line-height: 19px;
+        line-height: 21px;
         margin: 16px 0px 16px 0px;
     }     
 }
