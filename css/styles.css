@@ -654,7 +654,7 @@ body{
     font-family: 'EuropeExt';
     font-style: italic;
     font-weight: 700;
-    width: 60vw;
+    width: 63vw;
     letter-spacing: 0em;
     text-align: left;
     color: black;
@@ -1304,8 +1304,9 @@ body{
 .question img{
     cursor: pointer;
     position: absolute;
+    height: 50px;
     right: 20px;
-    top: 13%;
+    top: 7%;
 }
 
 @media (max-width: 767px){
@@ -1475,11 +1476,11 @@ input:checked ~ .question img{
 
 @media (max-width: 767px){
     .about-best__amount{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
     }     
     .about-best__desc{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
     }
 }
@@ -1688,7 +1689,7 @@ input:checked ~ .question img{
     .footer__icons{
         margin: 10px 0 0 0;
         align-items: flex-start;
-        width: 200px;
+        width: 300px;
     }
 }
 
@@ -1699,12 +1700,7 @@ a.footer__icon{
     height: 48px;
 }
 
-@media (max-width: 767px){
-    a.footer__icon{ 
-        width: 23px;
-        height: 23px;
-    }
-}
+
 
 .footer__icon:first-child{
     margin: 0 15px 0 0;
