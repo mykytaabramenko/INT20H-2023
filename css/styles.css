@@ -319,7 +319,7 @@ body{
 
 @media (max-width: 1280px){
     .top__second-row{
-        padding: 55px 0 0 0;
+        padding: 30px 0 0 0;
     }
 }
 
@@ -786,7 +786,7 @@ body{
     border-width: 5px;
     width: 248px;
     height: 266px;
-    margin: 32px 37px;
+    margin: 32px 32px;
     
     animation: border-hack-in-numbers 4s infinite;
 
@@ -797,7 +797,7 @@ body{
         max-width: 146px;
         max-height: 156px;
         border-width: 3px;
-        margin: 30px 30px;
+        margin: 22px 22px;
     }
 }
 
@@ -1015,7 +1015,7 @@ body{
     .what-you-get__item{
         width: 143px;
         height: 143px;
-        margin: 24px 30px; 
+        margin: 20px 20px; 
     }    
 }
 
@@ -1368,7 +1368,7 @@ input:checked ~ .question img{
     margin: 180px 0px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 992px){
     .organizers{
         margin: 95px 0px;
     }     
@@ -1381,20 +1381,82 @@ input:checked ~ .question img{
     margin: 100px 0 0 0;
 }
 
-@media (max-width: 767px){
+@media (max-width: 992px){
     .organizers__row{
-        margin: 30px 0 0 0;
+        display: none;
     }     
 }
+
+
+
+/* slider */
+
+.organizers__slider{
+    margin: 30px 20px 0 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 30px 0;
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 992px) {
+    .organizers__slider{
+        display: none;
+    }
+}
+
+
+.organizers__slider::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.organizers__slider::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+    width: 12px;
+    height: 8px;
+}
+/*
+.organizers__slider::-webkit-scrollbar-track {
+    background: #A8A8A8;
+    border-radius: 10px;
+    width: 20px;
+}*/
+
+.organizers__slider > div {
+    
+    flex-shrink: 0;
+    width: 190px;
+    height: 263px;
+    margin-right: 50px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.organizers__slider > div:target {
+    /*transform: scale(0.8);*/
+}
+/* end of slider */
 
 .organizers__item{
     border-width: 2px;
     border-color: #A9CDEF;
     border-style: solid;
     box-shadow: 0px 0px 12px #A9CDEF;
-    width: 242px;
-    height: 330px; 
-    
+    width: 194px;
+    height: 262px;
+    margin: 0 20px;
 }
 
 .organizers__item img{
@@ -1408,22 +1470,22 @@ input:checked ~ .question img{
 
 
 .organizers__name{
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
-    line-height: 26px;
+    line-height: 20px;
     letter-spacing: 0em;
 }
 
 .organizers__position{
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
-    line-height: 19px;
+    line-height: 16px;
     letter-spacing: 0em;
 }
 .organizers__email{
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
-    line-height: 19px;
+    line-height: 14px;
     letter-spacing: 0em;
 }
 
@@ -1447,12 +1509,14 @@ input:checked ~ .question img{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
 }
 
 .about-best__numbers{
     display: flex;
     flex-direction: column;
-    max-width: 33%;
+    width: 33.333%;
+    position: relative;
 }
 
 .about-best__amount{
@@ -1476,11 +1540,11 @@ input:checked ~ .question img{
 
 @media (max-width: 767px){
     .about-best__amount{
-        font-size: 14px;
+        font-size: 15px;
         line-height: 24px;
     }     
     .about-best__desc{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 24px;
     }
 }
@@ -1623,7 +1687,7 @@ input:checked ~ .question img{
     .final__button{
         margin-top: 30px;
         margin-bottom: 30px;
-        padding: 16px 5px;
+        padding: 15px 5px;
         font-size: 16px;
         line-height: 17px;
     
@@ -1732,9 +1796,9 @@ a.footer__icon{
 
 @keyframes appear{
     0% {
-        transform: translateY(300%);
+        transform: translateX(300%);
     }
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
