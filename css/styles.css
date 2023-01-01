@@ -1805,12 +1805,13 @@ input:checked ~ .question img{
     .final__button{
         margin-top: 30px;
         margin-bottom: 30px;
-        padding: 15px 5px;
+        padding: 13px 20px;
         font-size: 16px;
-        line-height: 17px;
+        line-height: 16px;
+        border-radius: 15px;
     
         height: 50px;
-        max-width: 255px;
+        max-width: 300px;
         
     }
 }
