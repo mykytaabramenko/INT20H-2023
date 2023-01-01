@@ -1,22 +1,9 @@
-<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_862_58)">
-<path d="M40.5004 14C55.1369 14 67.0009 25.864 67 40.5004C67.0009 55.1377 55.136 67.0026 40.4996 67.0009C25.8623 67.0017 13.9991 55.1377 14 40.5013C13.9974 25.864 25.8623 14 40.5004 14V14Z" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
-<path d="M40.4995 14.0977V66.906" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
-<path d="M66.9038 40.501H14.0955" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
-<path d="M38.796 14.0977C38.796 14.0977 26.8716 23.4669 26.8716 40.5018C26.8716 57.5368 38.796 66.906 38.796 66.906" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
-<path d="M42.2031 14.0977C42.2031 14.0977 54.1276 23.4669 54.1276 40.5018C54.1276 57.5368 42.2031 66.906 42.2031 66.906" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
-<path d="M20.0576 23.4658C20.0576 23.4658 24.3164 31.9833 40.4996 31.9833C56.6828 31.9833 60.9415 23.4658 60.9415 23.4658" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
-<path d="M20.0576 57.536C20.0576 57.536 24.3164 49.0186 40.4996 49.0186C56.6828 49.0186 60.9415 57.536 60.9415 57.536" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
-</g>
-<defs>
-<filter id="filter0_d_862_58" x="0.985596" y="0.985352" width="79.0288" height="79.0303" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="6"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.662745 0 0 0 0 0.803922 0 0 0 0 0.937255 0 0 0 0.7 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_862_58"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_862_58" result="shape"/>
-</filter>
-</defs>
+<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.759 2C38.8813 2 49.518 12.6367 49.5172 25.759C49.518 38.8821 38.8806 49.5195 25.7582 49.518C12.6352 49.5188 1.99924 38.8821 2 25.7598C1.99771 12.6367 12.6352 2 25.759 2V2Z" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
+<path d="M25.7588 2.0874V49.4328" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
+<path d="M49.4314 25.7593H2.08594" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
+<path d="M24.2309 2.0874C24.2309 2.0874 13.54 10.4874 13.54 25.7601C13.54 41.0328 24.2309 49.4328 24.2309 49.4328" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
+<path d="M27.2852 2.0874C27.2852 2.0874 37.9761 10.4874 37.9761 25.7601C37.9761 41.0328 27.2852 49.4328 27.2852 49.4328" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
+<path d="M7.43066 10.4868C7.43066 10.4868 11.2488 18.1232 25.7579 18.1232C40.267 18.1232 44.0852 10.4868 44.0852 10.4868" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
+<path d="M7.43066 41.0324C7.43066 41.0324 11.2488 33.396 25.7579 33.396C40.267 33.396 44.0852 41.0324 44.0852 41.0324" stroke="white" stroke-width="2.02877" stroke-miterlimit="10"/>
 </svg>
