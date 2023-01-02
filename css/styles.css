@@ -1416,15 +1416,15 @@ body{
 .question img{
     cursor: pointer;
     position: absolute;
-    height: 50px;
+    height: 40px;
     right: 20px;
-    top: 10px;
+    top: 20px;
 }
 
 @media (max-width: 767px){
     .question img{
         right: 20px;
-        top: 10px;
+        top: 15px;
     }        
 }
 
@@ -1546,8 +1546,8 @@ input:checked ~ .question img{
 .organizers__slider > div {
     
     flex-shrink: 0;
-    width: 190px;
-    height: 263px;
+    width: 200px;
+    height: 262px;
     margin-right: 50px;
     transform-origin: center center;
     transform: scale(1);
@@ -1586,10 +1586,11 @@ input:checked ~ .question img{
 
 
 .organizers__name{
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     line-height: 25px;
     letter-spacing: 0em;
+    padding: 5px 0 0 0;
 }
 
 .organizers__position{
@@ -1597,9 +1598,10 @@ input:checked ~ .question img{
     text-align: center;
     line-height: 16px;
     letter-spacing: 0em;
+    padding: 5px 0 0 0;
 }
 .organizers__email{
-    font-size: 9px;
+    font-size: 10px;
     text-align: center;
     line-height: 14px;
     letter-spacing: 0em;
@@ -1683,7 +1685,7 @@ input:checked ~ .question img{
 
 .about-best__photo{
     margin: 20px;
-    filter: drop-shadow(0px 0px 15px rgba(169, 205, 239, 0.7));
+    box-shadow: 0px 0px 40px  #A9CDEF;
     width: 350px;
 }
 

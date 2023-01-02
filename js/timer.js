@@ -17,7 +17,7 @@ let x = setInterval(function() {
   
   0 <= minutes && minutes < 10? document.getElementById('minutes').innerHTML = 
   "0" + minutes : document.getElementById('minutes').innerHTML = minutes;
-
+  
   0 <= seconds && seconds < 10? document.getElementById('seconds').innerHTML = 
   "0" + seconds : document.getElementById('seconds').innerHTML = seconds; 
   
