@@ -211,7 +211,7 @@ body{
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
-    /*animation: dots 1s linear infinite;*/
+    
 }
 
 @media (max-width: 767px){
@@ -220,20 +220,6 @@ body{
         top: -5px;
     }
 }
-
-/* TODO DO WE NEED ANIMATION OF DOTS
-@keyframes dots{
-    15% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    85% {
-        opacity: 1;
-    }
-}
-*/
 
 .timer__amount{
     font-family: 'Digital-7 Mono';
@@ -404,11 +390,10 @@ body{
 }
 
 .top__registration {
-    padding: 30px 36px;
+    padding: 27px 0px;
 	margin: 0 auto;
 	position: relative;
 	z-index: 0;
-	
     width: 500px;
 	height: 91px;
 
@@ -425,15 +410,7 @@ body{
         max-height: 63px;
     }
 }
-/*
-.top__registration:hover{
-    padding: 25px 31px;
-    transition-duration: 0.5s;
-    border-color: rgba(168, 239, 255, 1);
-    border-style: solid;
-    border-width: 5px;
-}
-*/
+
 .top__registration::before {
     content: '';
     position: absolute;
@@ -448,16 +425,6 @@ body{
     background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
     animation: rotate 4s linear infinite;
 }
-
-/*
-.top__registration:hover:before{
-    display: none;
-}
-
-.top__registration:hover:after{
-    display: none;
-}
-*/
 
 .top__registration::after {
     content: '';
@@ -480,6 +447,7 @@ body{
     line-height: 36px;
     letter-spacing: 0em;
     color: white;
+    text-align: center;
 }
 
 @media (max-width: 767px){
@@ -489,25 +457,8 @@ body{
     
     }
 }
-/*
-@media (max-width: 1200px){
-    .top__registration p{
-        font-size: 30px;
-    }
-}
-*/
-.button{
-    border-radius: 50%;
-    background-image: url('../icons/Group\ 66.svg');
-}
-/*
-.top__redirect-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0 100px;
-    
-}*/
+
+
 
 .top__redirect-button{
     height: 60px;
@@ -619,26 +570,6 @@ body{
 	}
 }
 
-
-@keyframes slide1 {
-    0% { 
-        transform: translateX(-100%); 
-    }
-    100% { 
-        transform: translateX(100%); 
-    }
-}
-
-@keyframes slide2 {
-    0% { 
-        transform: translateX(-100%); 
-    }
-    100% { 
-        transform: translateX(100%); 
-    }
-}
-
-
 /* running string related */
 
 .running-string {
@@ -671,13 +602,7 @@ body{
     width: 540px;
     letter-spacing: 0em;
     text-align: left;
-    color: black;
-
-/*  position: relative;
-    left: 5%;
-    font-size: 2vw;
-    overflow: hidden;
-*/  
+    color: black;  
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
 
@@ -694,10 +619,6 @@ body{
         transform: translate3d(var(--move-final), 0, 0);
     }
 }
-
-/* adequat approach starts here */
-
-
 
 /* related about hackathon section */
 
@@ -1287,6 +1208,7 @@ body{
 
 .how-to-apply__text{
     height: 100%;
+    padding: 20px 0 0 0;
     text-align: center;
     font-size: 22px;
     width: 100%;
@@ -1294,6 +1216,7 @@ body{
 
 @media (max-width: 767px){
     .how-to-apply__text{
+        padding: 0;
         text-align: left;
         font-size: 16px;
         line-height: 23px;
@@ -1536,12 +1459,6 @@ input:checked ~ .question img{
     width: 12px;
     height: 8px;
 }
-/*
-.organizers__slider::-webkit-scrollbar-track {
-    background: #A8A8A8;
-    border-radius: 10px;
-    width: 20px;
-}*/
 
 .organizers__slider > div {
     
@@ -1560,9 +1477,6 @@ input:checked ~ .question img{
     align-items: center;
 }
 
-.organizers__slider > div:target {
-    /*transform: scale(0.8);*/
-}
 /* end of slider */
 
 .organizers__item{
@@ -1723,24 +1637,16 @@ input:checked ~ .question img{
     }     
 }
 
-/* bullshit is here */
-
-@keyframes rotate {
-	100% {
-		transform: rotate(1turn);
-	}
-}
-
 
 /*related final section */
 
 .final{
-    margin: 180px 0px;
+    margin: 180px 0px 20px;
 }
 
 @media (max-width: 767px){
     .final{
-        margin: 95px 0px;
+        margin: 95px 0px 0px;
     }     
 }
 
@@ -1832,8 +1738,10 @@ input:checked ~ .question img{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: end;
     padding: 20px 40px;
 }
+
 
 @media (max-width: 767px){
     .footer{
@@ -1848,7 +1756,7 @@ input:checked ~ .question img{
     font-weight: 300;
     line-height: 35px;
     letter-spacing: 0em;
-    text-align: right;
+    text-align: center;
     color: #737373;
     -webkit-text-stroke: 1px #737373;
 }
@@ -1857,7 +1765,7 @@ input:checked ~ .question img{
     .footer__title{
         font-size: 11px;
         line-height: 16px;
-        text-align: left;
+        text-align: center;
     }
 }
 
