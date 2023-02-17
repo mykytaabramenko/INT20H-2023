@@ -1831,3 +1831,87 @@ a.footer__icon{
         transform: translateX(0);
     }
 }
+
+
+.agenda__title{
+    margin-bottom: 60px; 
+}
+.agenda__day{
+
+}
+.agenda__day-title{
+
+}
+
+.agenda__table{
+    margin: 45px 0;
+}
+
+@media (max-width: 767px){
+    .agenda__table{
+        margin: 45px 20px;
+    }
+}
+
+.agenda__row{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+}
+.agenda__text{
+    padding: 0;
+    font-family: 'Ruberoid';
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* todo */
+@media (max-width: 767px){
+    .agenda__text{
+        font-size: 17px;
+        line-height: 25px;
+        max-width: 200px;
+    }
+}
+
+.agenda__time{
+    width: 160px;
+    position: relative;
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 767px){
+    .agenda__time{
+        width: 110px;
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+.agenda__start-time
+.agenda__finish-time
+{
+    font-family: 'Ruberoid';
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+@media (max-width: 767px){
+    .agenda__start-time {
+        margin-right: 5px;
+    }
+    .agenda__finish-time {
+        margin-left: 5px;
+    }
+}
