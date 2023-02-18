@@ -1291,7 +1291,7 @@ body {
 
 @media (max-width: 767px) {
     .agenda {
-        margin: 180px 0px 180px 0px;
+        margin: 95px 0px 95px;
     }
 }
 
@@ -1980,5 +1980,174 @@ a.footer__icon {
     .agenda__finish-time {
         margin-left: 5px;
         width: 65px;
+    }
+}
+
+/* partners related */
+
+.partners {}
+
+.partnres__title {}
+
+.partners__grid {
+    margin: 90px 0 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    align-items: center;
+    grid-template-areas:
+        "uklon uklon macpaw macpaw"
+        "mighty infopulse infopulse tenthousand"
+        "support support unicorn unicorn"
+        "hillel hillel hillel hillel";
+}
+
+@media (max-width: 992px) {
+    .partners__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-areas:
+            "uklon macpaw"
+            "mighty tenthousand"
+            "infopulse unicorn"
+            "support hillel";
+    }
+}
+
+@media (max-width: 767px) {
+    .partners__grid {}
+}
+
+.partners__grid>div>a>img {
+    height: 100%;
+    width: 100%;
+}
+
+.partners__item_uklon {
+    height: 38px;
+    width: 150px;
+    justify-self: center;
+    grid-area: uklon;
+}
+
+.partners__item_macpaw {
+    height: 32px;
+    width: 188px;
+    grid-area: macpaw;
+    justify-self: center;
+}
+
+.partners__item_mighty {
+    height: 74px;
+    width: 258px;
+    grid-area: mighty;
+    justify-self: center;
+}
+
+.partners__item_infopulse {
+    height: 48px;
+    width: 178px;
+    grid-area: infopulse;
+    justify-self: center;
+}
+
+.partners__item_tenthousand {
+    height: 70px;
+    width: 268px;
+    grid-area: tenthousand;
+    justify-self: center;
+}
+
+.partners__item_support {
+    height: 82px;
+    width: 176px;
+    grid-area: support;
+
+    justify-self: center;
+}
+
+.partners__item_unicorn {
+    height: 52px;
+    width: 228px;
+    grid-area: unicorn;
+    justify-self: center;
+}
+
+.partners__item_hillel {
+    height: 48px;
+    width: 206px;
+    grid-area: hillel;
+    justify-self: center;
+}
+
+.partners__item {}
+
+.partners__text {
+    margin: 80px 0 36px;
+}
+
+.partners__collaboration {
+    position: relative;
+    height: 112px;
+    width: 112px;
+    margin: 0 auto;
+}
+
+.partners__collaboration>a>img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 767px) {
+    .partners__item_uklon {
+        height: 24px;
+        width: 98px;
+    }
+
+    .partners__item_macpaw {
+        height: 22px;
+        width: 120px;
+    }
+
+    .partners__item_mighty {
+        height: 42px;
+        width: 148px;
+    }
+
+    .partners__item_infopulse {
+        height: 30px;
+        width: 110px;
+    }
+
+    .partners__item_tenthousand {
+        height: 40px;
+        width: 156px;
+    }
+
+    .partners__item_support {
+        height: 56px;
+        width: 118px;
+    }
+
+    .partners__item_unicorn {
+        height: 32px;
+        width: 138px;
+    }
+
+    .partners__item_hillel {
+        height: 28px;
+        width: 120px;
+    }
+
+    .partners__collaboration {
+        height: 58px;
+        width: 58px;
     }
 }
