@@ -2071,8 +2071,8 @@ a.footer__icon {
 }
 
 .partners__item_unicorn {
-    height: 52px;
-    width: 228px;
+    height: 78px;
+    width: 264px;
     grid-area: unicorn;
     justify-self: center;
 }
@@ -2137,8 +2137,8 @@ a.footer__icon {
     }
 
     .partners__item_unicorn {
-        height: 32px;
-        width: 138px;
+        height: 42px;
+        width: 142px;
     }
 
     .partners__item_hillel {
