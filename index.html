@@ -1,1084 +1,1003 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css?v=1.0">
-	<link rel="icon" type="image/x-icon" href="img/logo.png">
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-	<meta http-equiv="Pragma" content="no-cache"/>
-	<meta http-equiv="Expires" content="0"/>
-	
-	<title>INT20H</title>
-</head>
-<body>
-	
-	
-	<div class="wrapper">
-		<header class="header">
-			<div class="timer">
-				<div class="timer__section">
-					<div id="days" class="timer__amount">
-						00
-					</div>
-					<div class="timer__text">
-						DAYS
-					</div>
-				</div>
-				<div class="timer__dots">:</div>
-				<div class="timer__section">
-					<div id="hours" class="timer__amount">
-						00
-					</div>
-					<div class="timer__text">
-						HOURS
-					</div>
-				</div>
-				<div class="timer__dots">:</div>
-				<div class="timer__section">
-					<div id="minutes" class="timer__amount">
-						00
-					</div>
-					<div class="timer__text">
-						MINUTES
-					</div>
-				</div>
-				<div class="timer__dots">:</div>
-				<div class="timer__section">
-					<div id="seconds" class="timer__amount">
-						00
-					</div>
-					<div class="timer__text">
-						SECONDS
-					</div>
-				</div>
-			</div>
-		</header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-		<div class="content">
-			<div class="top">
-				
-					<div class="top__row">
-						<div class="top__logo">
-							<img src="img/logo.png" alt="INT20H logo">
-						</div>
-						<div class="top__format-time-wrapper">
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSfqliZoVI0kkZhyhiph6mYzIrOLHSRwnj1Y4lEbK5qe42STOw/viewform" target="_blank" class="top__registration">
-								<p>ЗАРЕЄСТРУВАТИСЯ</p>
-							</a>
-							<p class="top__date">
-								March 4-5, 2023
-							</p>
-							<p class="top__format">
-								ONLINE
-							</p>
-						</div>	
-					</div>
-					<div class="top__second-row">
-						<a href="#running-string" alt="Redirect button" class="top__redirect-button">
-							<img src="img/arrow1.svg" alt="Arrow down">
-						</a>
-						<a href="https://www.youtube.com/watch?v=_iTZSztuIeA" target="_blank" class="top__how-it-was">
-							як це було
-						</a>
-					</div>
-				
-				
-				
-				<canvas id="canvas" class="canvas"></canvas>
-			</div>
-			
+    <title>INT20H</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="timer">
+          <div class="timer__section">
+            <div id="days" class="timer__amount">00</div>
+            <div class="timer__text">DAYS</div>
+          </div>
+          <div class="timer__dots">:</div>
+          <div class="timer__section">
+            <div id="hours" class="timer__amount">00</div>
+            <div class="timer__text">HOURS</div>
+          </div>
+          <div class="timer__dots">:</div>
+          <div class="timer__section">
+            <div id="minutes" class="timer__amount">00</div>
+            <div class="timer__text">MINUTES</div>
+          </div>
+          <div class="timer__dots">:</div>
+          <div class="timer__section">
+            <div id="seconds" class="timer__amount">00</div>
+            <div class="timer__text">SECONDS</div>
+          </div>
+        </div>
+      </header>
 
-			<div id="running-string" class="running-string">
-				<div class="running-string__inner" aria-hidden="true">
-					<span>LET'S HACK YOURSELF</span>
-					<span>LET'S HACK YOURSELF</span>
-					<span>LET'S HACK YOURSELF</span>
-					<span>LET'S HACK YOURSELF</span>
-					<span>LET'S HACK YOURSELF</span>
-				</div>
+      <div class="content">
+        <div class="top">
+          <div class="top__row">
+            <div class="top__logo">
+              <img src="img/logo.png" alt="INT20H logo" />
+            </div>
+            <div class="top__format-time-wrapper">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfqliZoVI0kkZhyhiph6mYzIrOLHSRwnj1Y4lEbK5qe42STOw/viewform"
+                target="_blank"
+                class="top__registration"
+              >
+                <p>ЗАРЕЄСТРУВАТИСЯ</p>
+              </a>
+              <p class="top__date">March 4-5, 2023</p>
+              <p class="top__format">ONLINE</p>
+            </div>
+          </div>
+          <div class="top__second-row">
+            <a
+              href="#running-string"
+              alt="Redirect button"
+              class="top__redirect-button"
+            >
+              <img src="img/arrow1.svg" alt="Arrow down" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=_iTZSztuIeA"
+              target="_blank"
+              class="top__how-it-was"
+            >
+              як це було
+            </a>
+          </div>
 
-			</div>
-			
-			<div class="hidden">
-				<div class="about-hack">
-					<div class="container">
-						<div class="about-hack__text text">
-							Хакатон INT20H — щорічні IT-змагання, організовані студентами для студентів.
-							Протягом 20 годин учасники працюють над створенням інноваційних рішень у вибраних категоріях, прокачують свої hard і soft skills.
-						</div>
-					</div>
-	
-				</div>
-	
-				<div class="format">
-					<div class="container">
-						<div class="format__title title">
-							ФОРМАТ ПРОВЕДЕННЯ
-						</div>
-						
-						<div class="format__text text">
-							Через війну в країні заради безпеки хакатон INT20H 2023 буде проведений у форматі online.
-						</div>
-						
-					</div>
-				</div>
-	
-			</div>
-			
-			<div class="hack-in-numbers hidden">
-				
-					<div class="hack-in-numbers__title title">
-						ХАКАТОН У ЦИФРАХ
-					</div>
-					<div class="hack-in-numbers__text_2021 text">
-						INT20H 2021
-					</div>
-					<div class="hack-in-numbers__icons">
-						<div class="hack-in-numbers__row">
-							
-							<div class="hack-in-numbers__box">
-								<img src="img/innings.svg" alt="Innings">
-								<p class="hack-in-numbers__text text">
-									545+ подач
-								</p>
-							</div>
-							<div class="hack-in-numbers__box">
-								<img src="img/pax.svg" alt="Participants">
-								<p class="hack-in-numbers__text text">
-									126 учасників
-								</p>
-							</div>
-						
-						
-							<div class="hack-in-numbers__box">
-								<img src="img/teams.svg" alt="Teams">
-								<p class="hack-in-numbers__text text">
-									38 команд
-								</p>
-							</div>
-							<div class="hack-in-numbers__box">
-								<a href="" class="partners__link"></a><img src="img/partners.svg" alt="Partners">
-								<p class="hack-in-numbers__text text">
-									17 партнерів
-								</p>
-							</div>
-						
-						</div>
-					</div>
-				
-			</div>
+          <canvas id="canvas" class="canvas"></canvas>
+        </div>
 
-			<div class="categories hidden">
-				<div class="container">
-					<div class="categories__title title">
-						КАТЕГОРІЇ
-					</div>
-					<div class="categories__table">
-						<div class="categories__row">
-							<div class="categories__column">
-								<div class="categories__image">
-									<img src="img/web-dev.svg" alt="Web development" class="categories__img">
-								</div>
-								<div class="categories__image">
-									<img src="img/mobile-dev.svg" alt="Mobile development" class="categories__img">
-								</div>
-								<div class="categories__image">
-									<img src="img/data-science.svg" alt="Data science" class="categories__img">
-								</div>
-								
-							</div>
-							<div class="categories__column">
-								<p class="categories__text text">Web development</p>
-								<p class="categories__text text">Mobile development</p>
-								<p class="categories__text text">Data Science</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+        <div id="running-string" class="running-string">
+          <div class="running-string__inner" aria-hidden="true">
+            <span>LET'S HACK YOURSELF</span>
+            <span>LET'S HACK YOURSELF</span>
+            <span>LET'S HACK YOURSELF</span>
+            <span>LET'S HACK YOURSELF</span>
+            <span>LET'S HACK YOURSELF</span>
+          </div>
+        </div>
 
-			<div class="what-you-get hidden">
-				<div class="container">
-					<div class="what-you-get__title title">
-						ЩО ТИ ОТРИМАЄШ
-					</div>
+        <div class="hidden">
+          <div class="about-hack">
+            <div class="container">
+              <div class="about-hack__text text">
+                Хакатон INT20H — щорічні IT-змагання, організовані студентами
+                для студентів. Протягом 20 годин учасники працюють над
+                створенням інноваційних рішень у вибраних категоріях, прокачують
+                свої hard і soft skills.
+              </div>
+            </div>
+          </div>
 
-					<div class="what-you-get__row">
-						<div class="what-you-get__item">
-							<div class="what-you-get__item_front">
-								<img src="img/experience.svg" alt="Experience">
-								<p class="what-you-get__text text">
-									Experience
-								</p>
-							</div>
-							<div class="what-you-get__item_back">
-								<p class="what-you-get__text text">
-									Продемонструй свої навички у командній роботі. Створи новий проєкт та отримай фідбек від досвідченого ментора.
-								</p>
-							</div>
-							
-						</div>
-						<div class="what-you-get__item">
-							<div class="what-you-get__item_front">
-								<img src="img/career.svg" alt="Career opportunities">
-								<p class="what-you-get__text text">
-									Career opportunities
-								</p>
-							</div>
-							<div class="what-you-get__item_back">
-								<p class="what-you-get__text text">
-									Поспілкуйся з представником компанії, зарекомендуй себе та отримай роботу мрії!
-								</p>
-							</div>
-							
-						</div>
-						<div class="what-you-get__item">
-							<div class="what-you-get__item_front">
-								<img src="img/networking.svg" alt="Networking">
-								<p class="what-you-get__text text">
-									Networking
-								</p>
-							</div>
-							<div class="what-you-get__item_back">
-								<p class="what-you-get__text text">
-									Заводь нові знайомства та поділись своїми ідеями з однодумцями.
-								</p>
-							</div>
-							
-						</div>
-						<div class="what-you-get__item">
-							<div class="what-you-get__item_front">
-								<img src="img/clock.svg" alt="Sleepless hours">
-								<p class="what-you-get__text text">
-									20 sleepless hours
-								</p>
-							</div>
-							<div class="what-you-get__item_back">
-								<p class="what-you-get__text text">
-									Кинь собі виклик - розв’яжи цікаву задачу за 20 годин, прокачай стресостійкість та отримай досвід створення проєкту у команді за короткий час.
-								</p>
-							</div>
-							
-						</div>
-						
-						<div class="what-you-get__item">
-							<div class="what-you-get__item_front">
-								<img src="img/prizes.svg" alt="Prizes">
-								<p class="what-you-get__text text">
-									Prizes
-								</p>
-							</div>
-							<div class="what-you-get__item_back">
-								<p class="what-you-get__text text">
-									Презентуй свою ідею та виграй круті призи від наших партнерів!
-								</p>
-							</div>
-							
-						</div>
-						
-						
-						
-						<div class="what-you-get__item">
-							<div class="what-you-get__item_front">
-								<img src="img/fun.svg" alt="Fun">
-								<p class="what-you-get__text text">
-									Fun
-								</p>
-							</div>
-							<div class="what-you-get__item_back">
-								<p class="what-you-get__text text">
-									Класно проводь час та отримай незабутні враження від проєкту.
-								</p>
-							</div>
-							
-						</div>
-					</div>		
-				</div>
-			</div>
+          <div class="format">
+            <div class="container">
+              <div class="format__title title">ФОРМАТ ПРОВЕДЕННЯ</div>
 
-			<div class="how-to-apply hidden">
-				<div class="container">
-					<div class="how-to-apply__title title">
-						Як потрапити на Хакатон INT20H?
-					</div>
-					<div class="how-to-apply__row">
-						<div class="how-to-apply__item">
-							<img src="img/step01.svg" class="how-to-apply__desktop-img" alt="Step 1">
-							<img src="img/step01-mobile.svg" class="how-to-apply__mobile-img" alt="Step 1">
-							<p class="how-to-apply__text text">
-								Зареєструйся до 29.01
-							</p>
-						</div>
-						<div class="how-to-apply__item">
-							<img src="img/step02.svg" class="how-to-apply__desktop-img" alt="Step 2">
-							<img src="img/step02-mobile.svg" class="how-to-apply__mobile-img" alt="Step 2">
-							<p class="how-to-apply__text text">
-								Виконай тестове завдання до 7.02
-							</p>
-						</div>
-						<div class="how-to-apply__item">
-							<img src="img/step03.svg" class="how-to-apply__desktop-img" alt="Step 3">
-							<img src="img/step03-mobile.svg" class="how-to-apply__mobile-img" alt="Step 3">
-							<p class="how-to-apply__text text">
-								Отримай запрошення до 14.02
-							</p>
-						</div>
-						<div class="how-to-apply__item">
-							<img src="img/step04.svg" class="how-to-apply__desktop-img" alt="Step 4">
-							<img src="img/step04-mobile.svg" class="how-to-apply__mobile-img" alt="Step 4">
-							<p class="how-to-apply__text text">
-								Долучайся до INT20H 04-05.03
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+              <div class="format__text text">
+                Через війну в країні заради безпеки хакатон INT20H 2023 буде
+                проведений у форматі online.
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<div class="partners hidden">
-				<div class="container">
-					<div class="partnres__title title">
-						ПАРТНЕРИ
-					</div>
-					<div class="partners__grid">
-						<div class="partners__item_uklon">
-							<a href="https://uklon.com.ua/" target="_blank" class="partners__link">
-								<img src="img/partners/uklon.svg" alt="Uklon">
-							</a>
-						</div>
-						<div class="partners__item_macpaw">
-							<a href="https://macpaw.com/" target="_blank" class="partners__link">
-								<img src="img/partners/macpaw.svg" alt="MacPaw">
-							</a>
-						</div>
-						<div class="partners__item_mighty">
-							<a href="https://www.mighty.digital/" target="_blank" class="partners__link">
-								<img src="img/partners/mighty.svg" alt="Mighty Digital">
-							</a>
-						</div>
-						<div class="partners__item_infopulse">
-							<a href="https://www.infopulse.com/" target="_blank" class="partners__link">
-								<img src="img/partners/infopulse.svg" alt="Infopulse">
-							</a>
-						</div>
-						<div class="partners__item_tenthousand">
-							<a href="https://www.tenthousand.io/en/" target="_blank" class="partners__link">
-								<img src="img/partners/tenthousand.svg" alt="TenThousand">
-							</a>
-						</div>
-						<div class="partners__item_support">
-							<a href="https://supportyourapp.com/" target="_blank" class="partners__link">
-								<img src="img/partners/support.svg" alt="Support Your App">
-							</a>
-						</div>
-						<div class="partners__item_unicorn">
-							<a href="https://unicorn.com/en/" target="_blank" class="partners__link">
-								<img src="img/partners/unicorn.png" alt="Unicorn">
-							</a>
-						</div>
-						<div class="partners__item_hillel">
-							<a href="https://ithillel.ua/" target="_blank" class="partners__link">
-								<img src="img/partners/hillel.svg" alt="Hillel">
-							</a>
-						</div>
-					</div>
-					<div class="partners__text text">
-						У співпраці з
-					</div>
-					<div class="partners__collaboration">
-						<a href="https://kpi.ua/" target="_blank" class="partners__link">
-							<img src="img/partners/kpi.svg" alt="KPI">
-						</a>
-					</div>
-				</div>
-			</div>
+        <div class="hack-in-numbers hidden">
+          <div class="hack-in-numbers__title title">ХАКАТОН У ЦИФРАХ</div>
+          <div class="hack-in-numbers__text_2021 text">INT20H 2021</div>
+          <div class="hack-in-numbers__icons">
+            <div class="hack-in-numbers__row">
+              <div class="hack-in-numbers__box">
+                <img src="img/innings.svg" alt="Innings" />
+                <p class="hack-in-numbers__text text">545+ подач</p>
+              </div>
+              <div class="hack-in-numbers__box">
+                <img src="img/pax.svg" alt="Participants" />
+                <p class="hack-in-numbers__text text">126 учасників</p>
+              </div>
 
-			<div class="agenda hidden">
-				<div class="container">
-					<p class="agenda__title title">
-						AGENDA
-					</p>
+              <div class="hack-in-numbers__box">
+                <img src="img/teams.svg" alt="Teams" />
+                <p class="hack-in-numbers__text text">38 команд</p>
+              </div>
+              <div class="hack-in-numbers__box">
+                <a href="" class="partners__link"></a
+                ><img src="img/partners.svg" alt="Partners" />
+                <p class="hack-in-numbers__text text">17 партнерів</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="categories hidden">
+          <div class="container">
+            <div class="categories__title title">КАТЕГОРІЇ</div>
+            <div class="categories__table">
+              <div class="categories__row">
+                <div class="categories__column">
+                  <div class="categories__image">
+                    <img
+                      src="img/web-dev.svg"
+                      alt="Web development"
+                      class="categories__img"
+                    />
+                  </div>
+                  <div class="categories__image">
+                    <img
+                      src="img/mobile-dev.svg"
+                      alt="Mobile development"
+                      class="categories__img"
+                    />
+                  </div>
+                  <div class="categories__image">
+                    <img
+                      src="img/data-science.svg"
+                      alt="Data science"
+                      class="categories__img"
+                    />
+                  </div>
+                </div>
+                <div class="categories__column">
+                  <p class="categories__text text">Web development</p>
+                  <p class="categories__text text">Mobile development</p>
+                  <p class="categories__text text">Data Science</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				
-					<div class="agenda__day">
-						<p class="agenda__day-title title">
-							Субота 4.03
-						</p>
-						<div class="agenda__table">
-							<div class="agenda__row">
-								<p class="agenda__text text">
-									Check in
-								</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">
-										10:30
-									</span>
-									<span class="agenda__finish-time text">
-										11:00
-									</span>	
-								</div>
-								
-							</div>
-							<div class="agenda__row">
-								<p class="agenda__text text">
-									Відкриття Хакатону
-								</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">
-										11:00
-									</span>
-									<span class="agenda__finish-time text">
-										12:30
-									</span>	
-								</div>
-								
-							</div>
-							<div class="agenda__row">
-								<p class="agenda__text text">
-									Нетворкінг сесії з компаніями
-								</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">
-										12:30
-									</span>
-									<span class="agenda__finish-time text">
-										13:30
-									</span>	
-								</div>
-								
-							</div>
-							<div class="agenda__row">
-								<p class="agenda__text text">
-									Оголошення завдань та початок роботи
-								</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">
-										14:00
-									</span>
-									<span class="agenda__finish-time text"></span>	
-								</div>
-								
-							</div>
-							<div class="agenda__row">
-								<p class="agenda__text text">
-									Обов'язкова менторська сесія. Check point #1
-								</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">
-										16:00
-									</span>
-									<span class="agenda__finish-time text">
-										17:20
-									</span>	
-								</div>
-								
-							</div>							
-						</div>
-					</div>
-					<div class="agenda__day">
-						<p class="agenda__day-title title">
-							Неділя 5.03
-						</p>
-						<div class="agenda__table">
-							<div class="agenda__row">
-								<p class="agenda__text text">Обовʼязкова менторська сесія. Check point #2</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">07:50</span><span class="agenda__finish-time text">09:10</span></div>	
-								</div>
-								
-							<div class="agenda__row">
-								<p class="agenda__text text">Завершення роботи</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">10:00</span><span class="agenda__finish-time text"></span></div>	
-								</div>
-								
-							<div class="agenda__row">
-								<p class="agenda__text text">Підготовка до перезентацій</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">10:00</span><span class="agenda__finish-time text"></span></div>	
-								</div>
-								
-							<div class="agenda__row">
-								<p class="agenda__text text">Презентації категорії Web</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">11:00</span><span class="agenda__finish-time text"></span></div>									
-								</div>
+        <div class="what-you-get hidden">
+          <div class="container">
+            <div class="what-you-get__title title">ЩО ТИ ОТРИМАЄШ</div>
 
-							<div class="agenda__row">
-								<p class="agenda__text text">Презентації категорії Data Science</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">13:30</span><span class="agenda__finish-time text"></span></div>									
-								</div>
-							<div class="agenda__row">
-								<p class="agenda__text text">Презентації категорії Mobile</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">16:00</span><span class="agenda__finish-time text"></span></div>
-								</div>
-							<div class="agenda__row">
-								<p class="agenda__text text">Нагородження та закриття</p>
-								<div class="agenda__time">
-									<span class="agenda__start-time text">17:30</span><span class="agenda__finish-time text"></span></div>									
-								</div>
-						</div>
-					</div>
+            <div class="what-you-get__row">
+              <div class="what-you-get__item">
+                <div class="what-you-get__item_front">
+                  <img src="img/experience.svg" alt="Experience" />
+                  <p class="what-you-get__text text">Experience</p>
+                </div>
+                <div class="what-you-get__item_back">
+                  <p class="what-you-get__text text">
+                    Продемонструй свої навички у командній роботі. Створи новий
+                    проєкт та отримай фідбек від досвідченого ментора.
+                  </p>
+                </div>
+              </div>
+              <div class="what-you-get__item">
+                <div class="what-you-get__item_front">
+                  <img src="img/career.svg" alt="Career opportunities" />
+                  <p class="what-you-get__text text">Career opportunities</p>
+                </div>
+                <div class="what-you-get__item_back">
+                  <p class="what-you-get__text text">
+                    Поспілкуйся з представником компанії, зарекомендуй себе та
+                    отримай роботу мрії!
+                  </p>
+                </div>
+              </div>
+              <div class="what-you-get__item">
+                <div class="what-you-get__item_front">
+                  <img src="img/networking.svg" alt="Networking" />
+                  <p class="what-you-get__text text">Networking</p>
+                </div>
+                <div class="what-you-get__item_back">
+                  <p class="what-you-get__text text">
+                    Заводь нові знайомства та поділись своїми ідеями з
+                    однодумцями.
+                  </p>
+                </div>
+              </div>
+              <div class="what-you-get__item">
+                <div class="what-you-get__item_front">
+                  <img src="img/clock.svg" alt="Sleepless hours" />
+                  <p class="what-you-get__text text">20 sleepless hours</p>
+                </div>
+                <div class="what-you-get__item_back">
+                  <p class="what-you-get__text text">
+                    Кинь собі виклик - розв’яжи цікаву задачу за 20 годин,
+                    прокачай стресостійкість та отримай досвід створення проєкту
+                    у команді за короткий час.
+                  </p>
+                </div>
+              </div>
 
+              <div class="what-you-get__item">
+                <div class="what-you-get__item_front">
+                  <img src="img/prizes.svg" alt="Prizes" />
+                  <p class="what-you-get__text text">Prizes</p>
+                </div>
+                <div class="what-you-get__item_back">
+                  <p class="what-you-get__text text">
+                    Презентуй свою ідею та виграй круті призи від наших
+                    партнерів!
+                  </p>
+                </div>
+              </div>
 
-					<!-- <p class="agenda__text text">
+              <div class="what-you-get__item">
+                <div class="what-you-get__item_front">
+                  <img src="img/fun.svg" alt="Fun" />
+                  <p class="what-you-get__text text">Fun</p>
+                </div>
+                <div class="what-you-get__item_back">
+                  <p class="what-you-get__text text">
+                    Класно проводь час та отримай незабутні враження від
+                    проєкту.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-to-apply hidden">
+          <div class="container">
+            <div class="how-to-apply__title title">
+              Як потрапити на Хакатон INT20H?
+            </div>
+            <div class="how-to-apply__row">
+              <div class="how-to-apply__item">
+                <img
+                  src="img/step01.svg"
+                  class="how-to-apply__desktop-img"
+                  alt="Step 1"
+                />
+                <img
+                  src="img/step01-mobile.svg"
+                  class="how-to-apply__mobile-img"
+                  alt="Step 1"
+                />
+                <p class="how-to-apply__text text">Зареєструйся до 29.01</p>
+              </div>
+              <div class="how-to-apply__item">
+                <img
+                  src="img/step02.svg"
+                  class="how-to-apply__desktop-img"
+                  alt="Step 2"
+                />
+                <img
+                  src="img/step02-mobile.svg"
+                  class="how-to-apply__mobile-img"
+                  alt="Step 2"
+                />
+                <p class="how-to-apply__text text">
+                  Виконай тестове завдання до 7.02
+                </p>
+              </div>
+              <div class="how-to-apply__item">
+                <img
+                  src="img/step03.svg"
+                  class="how-to-apply__desktop-img"
+                  alt="Step 3"
+                />
+                <img
+                  src="img/step03-mobile.svg"
+                  class="how-to-apply__mobile-img"
+                  alt="Step 3"
+                />
+                <p class="how-to-apply__text text">
+                  Отримай запрошення до 14.02
+                </p>
+              </div>
+              <div class="how-to-apply__item">
+                <img
+                  src="img/step04.svg"
+                  class="how-to-apply__desktop-img"
+                  alt="Step 4"
+                />
+                <img
+                  src="img/step04-mobile.svg"
+                  class="how-to-apply__mobile-img"
+                  alt="Step 4"
+                />
+                <p class="how-to-apply__text text">
+                  Долучайся до INT20H 04-05.03
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="partners hidden">
+          <div class="container">
+            <div class="partnres__title title">ПАРТНЕРИ</div>
+            <div class="partners__grid">
+              <div class="partners__item_uklon">
+                <a
+                  href="https://uklon.com.ua/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/uklon.svg" alt="Uklon" />
+                </a>
+              </div>
+              <div class="partners__item_macpaw">
+                <a
+                  href="https://macpaw.com/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/macpaw.svg" alt="MacPaw" />
+                </a>
+              </div>
+              <div class="partners__item_mighty">
+                <a
+                  href="https://www.mighty.digital/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/mighty.svg" alt="Mighty Digital" />
+                </a>
+              </div>
+              <div class="partners__item_infopulse">
+                <a
+                  href="https://www.infopulse.com/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/infopulse.svg" alt="Infopulse" />
+                </a>
+              </div>
+              <div class="partners__item_tenthousand">
+                <a
+                  href="https://www.tenthousand.io/en/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/tenthousand.svg" alt="TenThousand" />
+                </a>
+              </div>
+              <div class="partners__item_support">
+                <a
+                  href="https://supportyourapp.com/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/support.svg" alt="Support Your App" />
+                </a>
+              </div>
+              <div class="partners__item_unicorn">
+                <a
+                  href="https://unicorn.com/en/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/unicorn.png" alt="Unicorn" />
+                </a>
+              </div>
+              <div class="partners__item_hillel">
+                <a
+                  href="https://ithillel.ua/"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/hillel.svg" alt="Hillel" />
+                </a>
+              </div>
+              <div class="partners__item_mozgus">
+                <a
+                  href="https://mozgus.ua/uk"
+                  target="_blank"
+                  class="partners__link"
+                >
+                  <img src="img/partners/mozgus.svg" alt="Mozgus" />
+                </a>
+              </div>
+            </div>
+            <div class="partners__text text">У співпраці з</div>
+            <div class="partners__collaboration">
+              <a href="https://kpi.ua/" target="_blank" class="partners__link">
+                <img src="img/partners/kpi.svg" alt="KPI" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="agenda hidden">
+          <div class="container">
+            <p class="agenda__title title">AGENDA</p>
+
+            <div class="agenda__day">
+              <p class="agenda__day-title title">Субота 4.03</p>
+              <div class="agenda__table">
+                <div class="agenda__row">
+                  <p class="agenda__text text">Check in</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text"> 10:30 </span>
+                    <span class="agenda__finish-time text"> 11:00 </span>
+                  </div>
+                </div>
+                <div class="agenda__row">
+                  <p class="agenda__text text">Відкриття Хакатону</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text"> 11:00 </span>
+                    <span class="agenda__finish-time text"> 12:30 </span>
+                  </div>
+                </div>
+                <div class="agenda__row">
+                  <p class="agenda__text text">Нетворкінг сесії з компаніями</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text"> 12:30 </span>
+                    <span class="agenda__finish-time text"> 13:30 </span>
+                  </div>
+                </div>
+                <div class="agenda__row">
+                  <p class="agenda__text text">
+                    Оголошення завдань та початок роботи
+                  </p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text"> 14:00 </span>
+                    <span class="agenda__finish-time text"></span>
+                  </div>
+                </div>
+                <div class="agenda__row">
+                  <p class="agenda__text text">
+                    Обов'язкова менторська сесія. Check point #1
+                  </p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text"> 16:00 </span>
+                    <span class="agenda__finish-time text"> 17:20 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="agenda__day">
+              <p class="agenda__day-title title">Неділя 5.03</p>
+              <div class="agenda__table">
+                <div class="agenda__row">
+                  <p class="agenda__text text">
+                    Обовʼязкова менторська сесія. Check point #2
+                  </p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text">07:50</span
+                    ><span class="agenda__finish-time text">09:10</span>
+                  </div>
+                </div>
+
+                <div class="agenda__row">
+                  <p class="agenda__text text">Завершення роботи</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text">10:00</span
+                    ><span class="agenda__finish-time text"></span>
+                  </div>
+                </div>
+
+                <div class="agenda__row">
+                  <p class="agenda__text text">Підготовка до перезентацій</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text">10:00</span
+                    ><span class="agenda__finish-time text"></span>
+                  </div>
+                </div>
+
+                <div class="agenda__row">
+                  <p class="agenda__text text">Презентації категорії Web</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text">11:00</span
+                    ><span class="agenda__finish-time text"></span>
+                  </div>
+                </div>
+
+                <div class="agenda__row">
+                  <p class="agenda__text text">
+                    Презентації категорії Data Science
+                  </p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text">13:30</span
+                    ><span class="agenda__finish-time text"></span>
+                  </div>
+                </div>
+                <div class="agenda__row">
+                  <p class="agenda__text text">Презентації категорії Mobile</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text">16:00</span
+                    ><span class="agenda__finish-time text"></span>
+                  </div>
+                </div>
+                <div class="agenda__row">
+                  <p class="agenda__text text">Нагородження та закриття</p>
+                  <div class="agenda__time">
+                    <span class="agenda__start-time text">17:30</span
+                    ><span class="agenda__finish-time text"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <p class="agenda__text text">
 						Coming soon...
 					</p> -->
-				</div>
-			</div>
-			
-			<div class="faq hidden">
-				<div class="container">
-					<div class="faq__title title">
-						FAQ
-					</div>
-					<div class="faq__column">
-						<div class="faq__item">
-							<input id="question1" type="checkbox" class="faq__text text">
-							
-							<label for="question1" class="question">
-								<p class="faq__question text">
-									Участь безкоштовна?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									Так, участь у хакатоні абсолютно безкоштовна.
-								</p>
-							</label>
-							
-						</div>
-						<div class="faq__item">
-							<input id="question2" type="checkbox" class="faq__text text">
-							
-							<label for="question2" class="question">
-								<p class="faq__question text">
-									Який початковий поріг знань?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									Для участі потрібен мінімальний рівень знань. Він буде визначений за допомогою тестового завдання, що виконується після реєстрації. Той, хто успішно його виконає, потрапить на хакатон. Тому не вагайся — подавайся!
-								</p>
-							</label>
-						</div>
-						<div class="faq__item">
-							<input id="question3" type="checkbox" class="faq__text text">
-							<label for="question3" class="question">
-								<p class="faq__question text">
-									Хто може взяти участь?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									Взяти участь у хакатоні може команда, що складається з 2-4 студентів, віком до 25 років кожен.
-								</p>
-							</label>
-						</div>
-						<div class="faq__item">
-							<input id="question4" type="checkbox" class="faq__text text">
-							<label for="question4" class="question">
-								<p class="faq__question text">
-									Якою має бути команда?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									Команда має складатися з 2-4 учасників. Обов’язково програмістів? Ні. Якщо ти знаєш, як представити продукт користувачам не зі сторони написання коду, тоді welcome, але хоча б один розробник в команді має бути.
-								</p>
-							</label>
-						</div>
-						<div class="faq__item">
-							<input id="question5" type="checkbox" class="faq__text text">
-							<label for="question5" class="question">
-								<p class="faq__question text">
-									Що робити, якщо я не маю команди?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									Не панікуй! Реєструйся, та приєднуйся до чату де ти зможеш знайти свою команду однодумців.
-								</p>
-							</label>
-						</div>
-						<div class="faq__item">
-							<input id="question6" type="checkbox" class="faq__text text">
-							<label for="question6" class="question">
-								<p class="faq__question text">
-									Скільки буде переможців?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									У кожній категорії за оголошеними критеріями журі визначають 3 команди-переможці.
-								</p>
-							</label>
-						</div>
-						<div class="faq__item">
-							<input id="question7" type="checkbox" class="faq__text text">
-							<label for="question7" class="question">
-								<p class="faq__question text">
-									Що робити у разі повітряної тривоги?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									Організатори не несуть відповідальності за життя учасників. Рекомендуємо подбати про укриття з електропостачанням й інтернетом на випадок повітряної тривоги. Час при цьому зупинятись не буде.
-								</p>
-							</label>
-						</div>
-						<div class="faq__item">
-							<input id="question8" type="checkbox" class="faq__text text">
-							<label for="question8" class="question">
-								<p class="faq__question text">
-									Що робити, якщо вимкнуть світло?
-								</p>
-								<img src="img/faq-arrow.svg" alt="Arrow">
-								<p class="faq__answer text">
-									У разі відключення світла організатори готові піти на поступки і дати додатковий час, або ж можливість раніше/пізніше виступити.
-								</p>
-							</label>
-						</div>
-					</div>
-					<div class="faq__questions">
-						<p class="faq__text_questions text">
-							Залишились питання?
-						</p>
-						<p class="faq__text_questions text">
-							Наш  <a href="https://t.me/vskruta" target="_blank" class="faq__text_bot">PAX resp</a> з радістю надасть тобі відповідь!
-						</p>
-					</div>
-				</div>
-			</div>
+          </div>
+        </div>
 
-			<div class="organizers hidden">
-				<div class="container">
-					<p class="organizers__title title">
-						КОМАНДА ОРГАНІЗАТОРІВ
-					</p>
+        <div class="faq hidden">
+          <div class="container">
+            <div class="faq__title title">FAQ</div>
+            <div class="faq__column">
+              <div class="faq__item">
+                <input id="question1" type="checkbox" class="faq__text text" />
 
-					<div class="organizers__slider">
-						<div class="organizers__item">
-							<img src="img/Tanya.jpg" alt="Тетяна Троіцька">
-							<p class="organizers__name text">
-								Тетяна Троіцька
-							</p>
-							<p class="organizers__position text">
-								Main Organizer
-							</p>
-							<p class="organizers__email text">
-								taniatroitska@best-kyiv.org
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Asya.jpg" alt="Анастасія Бондаренко">
-							<p class="organizers__name text">
-								Анастасія Бондаренко
-							</p>
-							<p class="organizers__position text">
-								Mentor
-							</p>
-							<p class="organizers__email text">
-								nastiabondarenko17@gmail.com
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Oleh.jpg" alt="Олег Борисевич">
-							<p class="organizers__name text">
-								Олег Борисевич
-							</p>
-							<p class="organizers__position text">
-								Corporate Relations Responsible
-							</p>
-							<p class="organizers__email text">
-								oleh.borysevych@best-kyiv.org
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Daryna.jpg" alt="Дарина Белінська">
-							<p class="organizers__name text">
-								Дарина Белінська
-							</p>
-							<p class="organizers__position text">
-								Barter Responsible
-							</p>
-							<p class="organizers__email text">
-								daryna.belinska@best-kyiv.org
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Nastya.jpg" alt="Анастасія П’яткова">
-							<p class="organizers__name text">
-								Анастасія П’яткова
-							</p>
-							<p class="organizers__position text">
-								Designer
-							</p>
-							<p class="organizers__email text">
-								anastasiia.piatkova@best-kyiv.org
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Lena.jpg" alt="Олена Бондаренко">
-							<p class="organizers__name text">
-								Олена Бондаренко
-							</p>
-							<p class="organizers__position text">
-								PR Responsible
-							</p>
-							<p class="organizers__email text">
-								lenabondarenko@best-kyiv.org
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Mykyta.jpg" alt="Микита Абраменко">
-							<p class="organizers__name text">
-								Микита Абраменко
-							</p>
-							<p class="organizers__position text">
-								IT&Topic Responsible
-							</p>
-							<p class="organizers__email text">
-								mykyta.abramenko@best-kyiv.org
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Sasha.jpg" alt="Олександра Кухтіна">
-							<p class="organizers__name text">
-								Олександра Кухтіна
-							</p>
-							<p class="organizers__position text">
-								Designer
-							</p>
-							<p class="organizers__email text">
-								hitechnic7341392@gmail.com
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Ryta.jpg" alt="Маргарита Войцешук">
-							<p class="organizers__name text">
-								Маргарита Войцешук
-							</p>
-							<p class="organizers__position text">
-								Participant Responsible
-							</p>
-							<p class="organizers__email text">
-								rita.voitseshuk@best-kyiv.org
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Vlad.jpg" alt="Владислав Спужак">
-							<p class="organizers__name text">
-								Владислав Спужак
-							</p>
-							<p class="organizers__position text">
-								Photo&Video Responsible
-							</p>
-							<p class="organizers__email text">
-								vladspuj.work@gmail.com
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Yaroslav.jpg" alt="Ярослав Варваров">
-							<p class="organizers__name text">
-								Ярослав Варваров
-							</p>
-							<p class="organizers__position text">
-								Logistics
-							</p>
-							<p class="organizers__email text">
-								varvarov.yrslv@gmail.com
-							</p>
-						</div>
-						<div class="organizers__item">
-							<img src="img/Natasha.jpg" alt="Наташа Шитікова">
-							<p class="organizers__name text">
-								Наташа Шитікова
-							</p>
-							<p class="organizers__position text">
-								HR
-							</p>
-							<p class="organizers__email text">
-								shytikova.n@best-kyiv.org
-							</p>
-						</div>
-						
-					</div>
-					<div class="organizers__grid">
-						<div class="organizers__row">
-							<div class="organizers__item">
-								<img src="img/Asya.jpg" alt="Анастасія Бондаренко">
-								<p class="organizers__name text">
-									Анастасія Бондаренко
-								</p>
-								<p class="organizers__position text">
-									Mentor
-								</p>
-								<p class="organizers__email text">
-									nastiabondarenko17@gmail.com
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Tanya.jpg" alt="Тетяна Троіцька">
-								<p class="organizers__name text">
-									Тетяна Троіцька
-								</p>
-								<p class="organizers__position text">
-									Main Organizer
-								</p>
-								<p class="organizers__email text">
-									taniatroitska@best-kyiv.org
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Oleh.jpg" alt="Олег Борисевич">
-								<p class="organizers__name text">
-									Олег Борисевич
-								</p>
-								<p class="organizers__position text">
-									Corporate Relations Responsible
-								</p>
-								<p class="organizers__email text">
-									oleh.borysevych@best-kyiv.org
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Daryna.jpg" alt="Дарина Белінська">
-								<p class="organizers__name text">
-									Дарина Белінська
-								</p>
-								<p class="organizers__position text">
-									Barter Responsible
-								</p>
-								<p class="organizers__email text">
-									daryna.belinska@best-kyiv.org
-								</p>
-							</div>
-						</div>
-						<div class="organizers__row">
-							<div class="organizers__item">
-								<img src="img/Nastya.jpg" alt="Анастасія П’яткова">
-								<p class="organizers__name text">
-									Анастасія П’яткова
-								</p>
-								<p class="organizers__position text">
-									Designer
-								</p>
-								<p class="organizers__email text">
-									anastasiia.piatkova@best-kyiv.org
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Lena.jpg" alt="Олена Бондаренко">
-								<p class="organizers__name text">
-									Олена Бондаренко
-								</p>
-								<p class="organizers__position text">
-									PR Responsible
-								</p>
-								<p class="organizers__email text">
-									lenabondarenko@best-kyiv.org
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Mykyta.jpg" alt="Микита Абраменко">
-								<p class="organizers__name text">
-									Микита Абраменко
-								</p>
-								<p class="organizers__position text">
-									IT&Topic Responsible
-								</p>
-								<p class="organizers__email text">
-									mykyta.abramenko@best-kyiv.org
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Sasha.jpg" alt="Олександра Кухтіна">
-								<p class="organizers__name text">
-									Олександра Кухтіна
-								</p>
-								<p class="organizers__position text">
-									Designer
-								</p>
-								<p class="organizers__email text">
-									hitechnic7341392@gmail.com
-								</p>
-							</div>
-						</div>
-						<div class="organizers__row">
-							<div class="organizers__item">
-								<img src="img/Ryta.jpg" alt="Маргарита Войцешук">
-								<p class="organizers__name text">
-									Маргарита Войцешук
-								</p>
-								<p class="organizers__position text">
-									Participant Responsible
-								</p>
-								<p class="organizers__email text">
-									rita.voitseshuk@best-kyiv.org
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Vlad.jpg" alt="Владислав Спужак">
-								<p class="organizers__name text">
-									Владислав Спужак
-								</p>
-								<p class="organizers__position text">
-									Photo&Video Responsible
-								</p>
-								<p class="organizers__email text">
-									vladspuj.work@gmail.com
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Yaroslav.jpg" alt="Ярослав Варваров">
-								<p class="organizers__name text">
-									Ярослав Варваров
-								</p>
-								<p class="organizers__position text">
-									Logistics
-								</p>
-								<p class="organizers__email text">
-									varvarov.yrslv@gmail.com
-								</p>
-							</div>
-							<div class="organizers__item">
-								<img src="img/Natasha.jpg" alt="Наташа Шитікова">
-								<p class="organizers__name text">
-									Наташа Шитікова
-								</p>
-								<p class="organizers__position text">
-									HR
-								</p>
-								<p class="organizers__email text">
-									shytikova.n@best-kyiv.org
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <label for="question1" class="question">
+                  <p class="faq__question text">Участь безкоштовна?</p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    Так, участь у хакатоні абсолютно безкоштовна.
+                  </p>
+                </label>
+              </div>
+              <div class="faq__item">
+                <input id="question2" type="checkbox" class="faq__text text" />
 
-			<div class="about-best hidden">
-				<div class="container">
-					<div class="about-best__title title">
-						Про BEST
-					</div>
-					<div class="about-best__photos">
-						<div class="about-best__photo">
-							<img src="img/best1.png" alt="Best in Tukhlia">
-						</div>
-						<div class="about-best__photo">
-							<img src="img/best2.png" alt="Best on Motivational Weekends">
-						</div>
-						<div class="about-best__photo">
-							<img src="img/best3.png" alt="Best EBEC">
-						</div>
-					</div>
-					
-						<div class="about-best__column">
-							<p class="about-best__text text">
-								Board of European Students of Technology
-							</p>
-							<p class="about-best__text text">
-								BEST - це міжнародна волонтерська, неприбуткова, неполітична, нерелігійна студентська організація. Ми допомагаємо студентам, компаніям та університетам налагодити обмін ідеями та ефективну співпрацю для спільного створення кращого майбутнього.
-							</p>
-							<div class="about-best__row">
-								<div class="about-best__numbers">
-									<p class="about-best__amount text">
-										32
-									</p>
-									<p class="about-best__desc text">
-										країни
-									</p>
-								</div>
-								<div class="about-best__numbers">
-									<p class="about-best__amount text">
-										97
-									</p>
-									<p class="about-best__desc text">
-										провідних технічних університетів
-									</p>
-								</div>
-								<div class="about-best__numbers">
-									<p class="about-best__amount text">
-										4500+
-									</p>
-									<p class="about-best__desc text">
-										представників
-									</p>
-								</div>
-							</div>
-							
-						</div>
-						
-					
-					<p class="about-best__text text">
-						Місія: Підтримка студентів у реалізації їхнього потенціалу та розвитку навичок роботи у міжнародній спільноті.
-					</p>
-					<p class="about-best__text text">
-						Візія: Сила у різноманітності. Ми поважаємо розмаїття культур та думок учасників, бо разом – ми сильніші.
-					</p>
-					<p class="about-best__text text">
-						BEST Kyiv працює на базі Київського політехнічного інститута імені І. Сікорського
-					</p>
-				</div>
-				
-			</div>
-			
-			<div class="final hidden">
-				<div class="container">
-					<div class="final__row">
-						<p class="final__text title">
-							Реєструйся до 29 січня включно!
-						</p>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLSfqliZoVI0kkZhyhiph6mYzIrOLHSRwnj1Y4lEbK5qe42STOw/viewform" target="_blank" class="final__button">
-							ЗАРЕЄСТРУВАТИСЯ
-						</a>
-					</div>
-				</div>
-			</div>
+                <label for="question2" class="question">
+                  <p class="faq__question text">Який початковий поріг знань?</p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    Для участі потрібен мінімальний рівень знань. Він буде
+                    визначений за допомогою тестового завдання, що виконується
+                    після реєстрації. Той, хто успішно його виконає, потрапить
+                    на хакатон. Тому не вагайся — подавайся!
+                  </p>
+                </label>
+              </div>
+              <div class="faq__item">
+                <input id="question3" type="checkbox" class="faq__text text" />
+                <label for="question3" class="question">
+                  <p class="faq__question text">Хто може взяти участь?</p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    Взяти участь у хакатоні може команда, що складається з 2-4
+                    студентів, віком до 25 років кожен.
+                  </p>
+                </label>
+              </div>
+              <div class="faq__item">
+                <input id="question4" type="checkbox" class="faq__text text" />
+                <label for="question4" class="question">
+                  <p class="faq__question text">Якою має бути команда?</p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    Команда має складатися з 2-4 учасників. Обов’язково
+                    програмістів? Ні. Якщо ти знаєш, як представити продукт
+                    користувачам не зі сторони написання коду, тоді welcome, але
+                    хоча б один розробник в команді має бути.
+                  </p>
+                </label>
+              </div>
+              <div class="faq__item">
+                <input id="question5" type="checkbox" class="faq__text text" />
+                <label for="question5" class="question">
+                  <p class="faq__question text">
+                    Що робити, якщо я не маю команди?
+                  </p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    Не панікуй! Реєструйся, та приєднуйся до чату де ти зможеш
+                    знайти свою команду однодумців.
+                  </p>
+                </label>
+              </div>
+              <div class="faq__item">
+                <input id="question6" type="checkbox" class="faq__text text" />
+                <label for="question6" class="question">
+                  <p class="faq__question text">Скільки буде переможців?</p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    У кожній категорії за оголошеними критеріями журі визначають
+                    3 команди-переможці.
+                  </p>
+                </label>
+              </div>
+              <div class="faq__item">
+                <input id="question7" type="checkbox" class="faq__text text" />
+                <label for="question7" class="question">
+                  <p class="faq__question text">
+                    Що робити у разі повітряної тривоги?
+                  </p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    Організатори не несуть відповідальності за життя учасників.
+                    Рекомендуємо подбати про укриття з електропостачанням й
+                    інтернетом на випадок повітряної тривоги. Час при цьому
+                    зупинятись не буде.
+                  </p>
+                </label>
+              </div>
+              <div class="faq__item">
+                <input id="question8" type="checkbox" class="faq__text text" />
+                <label for="question8" class="question">
+                  <p class="faq__question text">
+                    Що робити, якщо вимкнуть світло?
+                  </p>
+                  <img src="img/faq-arrow.svg" alt="Arrow" />
+                  <p class="faq__answer text">
+                    У разі відключення світла організатори готові піти на
+                    поступки і дати додатковий час, або ж можливість
+                    раніше/пізніше виступити.
+                  </p>
+                </label>
+              </div>
+            </div>
+            <div class="faq__questions">
+              <p class="faq__text_questions text">Залишились питання?</p>
+              <p class="faq__text_questions text">
+                Наш
+                <a
+                  href="https://t.me/vskruta"
+                  target="_blank"
+                  class="faq__text_bot"
+                  >PAX resp</a
+                >
+                з радістю надасть тобі відповідь!
+              </p>
+            </div>
+          </div>
+        </div>
 
-			
-		</div>
+        <div class="organizers hidden">
+          <div class="container">
+            <p class="organizers__title title">КОМАНДА ОРГАНІЗАТОРІВ</p>
 
+            <div class="organizers__slider">
+              <div class="organizers__item">
+                <img src="img/Tanya.jpg" alt="Тетяна Троіцька" />
+                <p class="organizers__name text">Тетяна Троіцька</p>
+                <p class="organizers__position text">Main Organizer</p>
+                <p class="organizers__email text">
+                  taniatroitska@best-kyiv.org
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Asya.jpg" alt="Анастасія Бондаренко" />
+                <p class="organizers__name text">Анастасія Бондаренко</p>
+                <p class="organizers__position text">Mentor</p>
+                <p class="organizers__email text">
+                  nastiabondarenko17@gmail.com
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Oleh.jpg" alt="Олег Борисевич" />
+                <p class="organizers__name text">Олег Борисевич</p>
+                <p class="organizers__position text">
+                  Corporate Relations Responsible
+                </p>
+                <p class="organizers__email text">
+                  oleh.borysevych@best-kyiv.org
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Daryna.jpg" alt="Дарина Белінська" />
+                <p class="organizers__name text">Дарина Белінська</p>
+                <p class="organizers__position text">Barter Responsible</p>
+                <p class="organizers__email text">
+                  daryna.belinska@best-kyiv.org
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Nastya.jpg" alt="Анастасія П’яткова" />
+                <p class="organizers__name text">Анастасія П’яткова</p>
+                <p class="organizers__position text">Designer</p>
+                <p class="organizers__email text">
+                  anastasiia.piatkova@best-kyiv.org
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Lena.jpg" alt="Олена Бондаренко" />
+                <p class="organizers__name text">Олена Бондаренко</p>
+                <p class="organizers__position text">PR Responsible</p>
+                <p class="organizers__email text">
+                  lenabondarenko@best-kyiv.org
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Mykyta.jpg" alt="Микита Абраменко" />
+                <p class="organizers__name text">Микита Абраменко</p>
+                <p class="organizers__position text">IT&Topic Responsible</p>
+                <p class="organizers__email text">
+                  mykyta.abramenko@best-kyiv.org
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Sasha.jpg" alt="Олександра Кухтіна" />
+                <p class="organizers__name text">Олександра Кухтіна</p>
+                <p class="organizers__position text">Designer</p>
+                <p class="organizers__email text">hitechnic7341392@gmail.com</p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Ryta.jpg" alt="Маргарита Войцешук" />
+                <p class="organizers__name text">Маргарита Войцешук</p>
+                <p class="organizers__position text">Participant Responsible</p>
+                <p class="organizers__email text">
+                  rita.voitseshuk@best-kyiv.org
+                </p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Vlad.jpg" alt="Владислав Спужак" />
+                <p class="organizers__name text">Владислав Спужак</p>
+                <p class="organizers__position text">Photo&Video Responsible</p>
+                <p class="organizers__email text">vladspuj.work@gmail.com</p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Yaroslav.jpg" alt="Ярослав Варваров" />
+                <p class="organizers__name text">Ярослав Варваров</p>
+                <p class="organizers__position text">Logistics</p>
+                <p class="organizers__email text">varvarov.yrslv@gmail.com</p>
+              </div>
+              <div class="organizers__item">
+                <img src="img/Natasha.jpg" alt="Наташа Шитікова" />
+                <p class="organizers__name text">Наташа Шитікова</p>
+                <p class="organizers__position text">HR</p>
+                <p class="organizers__email text">shytikova.n@best-kyiv.org</p>
+              </div>
+            </div>
+            <div class="organizers__grid">
+              <div class="organizers__row">
+                <div class="organizers__item">
+                  <img src="img/Asya.jpg" alt="Анастасія Бондаренко" />
+                  <p class="organizers__name text">Анастасія Бондаренко</p>
+                  <p class="organizers__position text">Mentor</p>
+                  <p class="organizers__email text">
+                    nastiabondarenko17@gmail.com
+                  </p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Tanya.jpg" alt="Тетяна Троіцька" />
+                  <p class="organizers__name text">Тетяна Троіцька</p>
+                  <p class="organizers__position text">Main Organizer</p>
+                  <p class="organizers__email text">
+                    taniatroitska@best-kyiv.org
+                  </p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Oleh.jpg" alt="Олег Борисевич" />
+                  <p class="organizers__name text">Олег Борисевич</p>
+                  <p class="organizers__position text">
+                    Corporate Relations Responsible
+                  </p>
+                  <p class="organizers__email text">
+                    oleh.borysevych@best-kyiv.org
+                  </p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Daryna.jpg" alt="Дарина Белінська" />
+                  <p class="organizers__name text">Дарина Белінська</p>
+                  <p class="organizers__position text">Barter Responsible</p>
+                  <p class="organizers__email text">
+                    daryna.belinska@best-kyiv.org
+                  </p>
+                </div>
+              </div>
+              <div class="organizers__row">
+                <div class="organizers__item">
+                  <img src="img/Nastya.jpg" alt="Анастасія П’яткова" />
+                  <p class="organizers__name text">Анастасія П’яткова</p>
+                  <p class="organizers__position text">Designer</p>
+                  <p class="organizers__email text">
+                    anastasiia.piatkova@best-kyiv.org
+                  </p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Lena.jpg" alt="Олена Бондаренко" />
+                  <p class="organizers__name text">Олена Бондаренко</p>
+                  <p class="organizers__position text">PR Responsible</p>
+                  <p class="organizers__email text">
+                    lenabondarenko@best-kyiv.org
+                  </p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Mykyta.jpg" alt="Микита Абраменко" />
+                  <p class="organizers__name text">Микита Абраменко</p>
+                  <p class="organizers__position text">IT&Topic Responsible</p>
+                  <p class="organizers__email text">
+                    mykyta.abramenko@best-kyiv.org
+                  </p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Sasha.jpg" alt="Олександра Кухтіна" />
+                  <p class="organizers__name text">Олександра Кухтіна</p>
+                  <p class="organizers__position text">Designer</p>
+                  <p class="organizers__email text">
+                    hitechnic7341392@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="organizers__row">
+                <div class="organizers__item">
+                  <img src="img/Ryta.jpg" alt="Маргарита Войцешук" />
+                  <p class="organizers__name text">Маргарита Войцешук</p>
+                  <p class="organizers__position text">
+                    Participant Responsible
+                  </p>
+                  <p class="organizers__email text">
+                    rita.voitseshuk@best-kyiv.org
+                  </p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Vlad.jpg" alt="Владислав Спужак" />
+                  <p class="organizers__name text">Владислав Спужак</p>
+                  <p class="organizers__position text">
+                    Photo&Video Responsible
+                  </p>
+                  <p class="organizers__email text">vladspuj.work@gmail.com</p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Yaroslav.jpg" alt="Ярослав Варваров" />
+                  <p class="organizers__name text">Ярослав Варваров</p>
+                  <p class="organizers__position text">Logistics</p>
+                  <p class="organizers__email text">varvarov.yrslv@gmail.com</p>
+                </div>
+                <div class="organizers__item">
+                  <img src="img/Natasha.jpg" alt="Наташа Шитікова" />
+                  <p class="organizers__name text">Наташа Шитікова</p>
+                  <p class="organizers__position text">HR</p>
+                  <p class="organizers__email text">
+                    shytikova.n@best-kyiv.org
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__title">
-					КОНТАКТИ
-				</div>
-				<div class="footer__icons">
-					<a href="https://best-kyiv.org/" target="_blank" class="footer__icon">
-						<img src="img/website.svg" alt="website">
-					</a>
-					<a href="https://www.instagram.com/best_kyiv/" target="_blank" class="footer__icon">
-						<img src="img/instagram.svg" alt="instagram">
-					</a>
-					<a href="https://www.facebook.com/best.kyiv/" target="_blank" class="footer__icon">
-						<img src="img/facebook.svg" alt="facebook">
-					</a>
-					<a href="https://www.linkedin.com/company/best-kyiv/mycompany/" target="_blank" class="footer__icon">
-						<img src="img/linkedin.svg" alt="linkedin">
-					</a>
-					<a href="https://t.me/bestkyiv" target="_blank" class="footer__icon">
-						<img src="img/telegram.svg" alt="telegram">
-					</a>
-				</div>
-			</div>
-				
-				
-				
-			
-			
-		</footer>		
-	</div>
-		
-	<script src="js/reload.js"></script>
-	<script src="js/matrix.js"></script>
-	<script src="js/header.js"></script>
-	<script src="js/timer.js"></script>
-	<script src="js/appearance.js"></script>
-	<script src="js/preventDefault.js"></script>
+        <div class="about-best hidden">
+          <div class="container">
+            <div class="about-best__title title">Про BEST</div>
+            <div class="about-best__photos">
+              <div class="about-best__photo">
+                <img src="img/best1.png" alt="Best in Tukhlia" />
+              </div>
+              <div class="about-best__photo">
+                <img src="img/best2.png" alt="Best on Motivational Weekends" />
+              </div>
+              <div class="about-best__photo">
+                <img src="img/best3.png" alt="Best EBEC" />
+              </div>
+            </div>
 
-</body>
+            <div class="about-best__column">
+              <p class="about-best__text text">
+                Board of European Students of Technology
+              </p>
+              <p class="about-best__text text">
+                BEST - це міжнародна волонтерська, неприбуткова, неполітична,
+                нерелігійна студентська організація. Ми допомагаємо студентам,
+                компаніям та університетам налагодити обмін ідеями та ефективну
+                співпрацю для спільного створення кращого майбутнього.
+              </p>
+              <div class="about-best__row">
+                <div class="about-best__numbers">
+                  <p class="about-best__amount text">32</p>
+                  <p class="about-best__desc text">країни</p>
+                </div>
+                <div class="about-best__numbers">
+                  <p class="about-best__amount text">97</p>
+                  <p class="about-best__desc text">
+                    провідних технічних університетів
+                  </p>
+                </div>
+                <div class="about-best__numbers">
+                  <p class="about-best__amount text">4500+</p>
+                  <p class="about-best__desc text">представників</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="about-best__text text">
+              Місія: Підтримка студентів у реалізації їхнього потенціалу та
+              розвитку навичок роботи у міжнародній спільноті.
+            </p>
+            <p class="about-best__text text">
+              Візія: Сила у різноманітності. Ми поважаємо розмаїття культур та
+              думок учасників, бо разом – ми сильніші.
+            </p>
+            <p class="about-best__text text">
+              BEST Kyiv працює на базі Київського політехнічного інститута імені
+              І. Сікорського
+            </p>
+          </div>
+        </div>
+
+        <div class="final hidden">
+          <div class="container">
+            <div class="final__row">
+              <p class="final__text title">Реєструйся до 29 січня включно!</p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfqliZoVI0kkZhyhiph6mYzIrOLHSRwnj1Y4lEbK5qe42STOw/viewform"
+                target="_blank"
+                class="final__button"
+              >
+                ЗАРЕЄСТРУВАТИСЯ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__title">КОНТАКТИ</div>
+          <div class="footer__icons">
+            <a
+              href="https://best-kyiv.org/"
+              target="_blank"
+              class="footer__icon"
+            >
+              <img src="img/website.svg" alt="website" />
+            </a>
+            <a
+              href="https://www.instagram.com/best_kyiv/"
+              target="_blank"
+              class="footer__icon"
+            >
+              <img src="img/instagram.svg" alt="instagram" />
+            </a>
+            <a
+              href="https://www.facebook.com/best.kyiv/"
+              target="_blank"
+              class="footer__icon"
+            >
+              <img src="img/facebook.svg" alt="facebook" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/best-kyiv/mycompany/"
+              target="_blank"
+              class="footer__icon"
+            >
+              <img src="img/linkedin.svg" alt="linkedin" />
+            </a>
+            <a
+              href="https://t.me/bestkyiv"
+              target="_blank"
+              class="footer__icon"
+            >
+              <img src="img/telegram.svg" alt="telegram" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/reload.js"></script>
+    <script src="js/matrix.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/appearance.js"></script>
+    <script src="js/preventDefault.js"></script>
+  </body>
 </html>
