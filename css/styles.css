@@ -1870,9 +1870,7 @@ a.footer__icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: #ffffff;
-  border-style: solid;
-  border-width: 1px;
+  border-bottom: solid 1px #ffffff;
 }
 
 .agenda__text {
